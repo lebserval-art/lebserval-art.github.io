@@ -1,0 +1,313 @@
+import os
+import re
+import subprocess
+from datetime import date
+
+today = date.today().isoformat()
+base_url = "https://lebserval-art.github.io"
+
+article_html = """<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ-5 лучших пусковых устройств для автомобиля (бустеров) в 2026 году — Рейтинг джамп-стартеров</title>
+    <meta name="description" content="Рейтинг надежных пусковых устройств (пуско-зарядных бустеров) для авто в 2026 году. Тесты пускового тока, емкость аккумулятора, защита от переполюсовки и запуск в мороз.">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(112303137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/112303137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="../index.html" class="logo">Техно<span>Гид</span></a>
+        <nav class="main-nav">
+            <a href="../index.html">Главная</a>
+            <a href="../about.html">О проекте</a>
+            <a href="../contacts.html">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container content-page">
+    <article class="article-full">
+        <header class="article-header">
+            <span class="badge">Автогаджеты</span>
+            <h1>Топ-5 лучших пусковых устройств для автомобиля в 2026 году: запуск в любой мороз</h1>
+            <div class="article-meta">
+                <span>Обновлено: Сентябрь 2026</span> • <span>Время чтения: 7 мин</span>
+            </div>
+        </header>
+
+        <div class="article-intro">
+            <p>Внезапно севший автомобильный аккумулятор на морозе или после долгой стоянки — ситуация, с которой сталкивался каждый водитель. Современное компактное пусковое устройство (джамп-стартер или бустер) на литий-полимерных ячейках способно завести бензиновый двигатель до 6-8 литров или дизель до 4-5 литров даже при полностью разряженной бортовой сети. Разбираем 5 лучших моделей 2026 года с честным пусковым током и надежной защитой.</p>
+        </div>
+
+        <div class="article-body">
+            <h2>Критерии выбора автомобильного бустера</h2>
+            <p>При выборе пуско-зарядного устройства для автомобиля важны не столько маркетинговые цифры емкости (в миллиампер-часах), сколько характеристики выдаваемого тока:</p>
+            <ul>
+                <li><strong>Пиковый и пусковой ток:</strong> Для легковушек обычно достаточно 400-600А пускового тока, для мощных кроссоверов и дизелей требуется от 800А до 1500А и выше.</li>
+                <li><strong>Емкость батареи (мАч / Втч):</strong> Влияет на количество попыток запуска подряд и возможность заряжать гаджеты.</li>
+                <li><strong>Системы защиты:</strong> Обязательна защита от короткого замыкания, переполюсовки, перезаряда и обратного тока.</li>
+                <li><strong>Дополнительный функционал:</strong> Фонарик, USB-порты быстрой зарядки (QC3.0 / PD), наличие компрессора или беспроводной зарядки.</li>
+            </ul>
+
+            <h2>Рейтинг топ-5 пусковых устройств 2026 года</h2>
+
+            <section class="product-card" id="baseus-pro">
+                <div class="product-badge">1 место • Оптимальный выбор</div>
+                <h2>1. Baseus Super Energy Pro Car Jump Starter (1000A / 12000 mAh)</h2>
+                <p class="product-desc">Сбалансированный бустер в эргономичном дизайне автомобильного радиатора. Выдает пиковый ток до 1000A, уверенно запускает бензиновые двигатели до 6.0 л и дизели до 3.5 л. Оснащен информативным цифровым экраном с отображением точного процента заряда.</p>
+                <ul class="specs-list">
+                    <li><strong>Пиковый ток:</strong> 1000 А (пусковой 600 А)</li>
+                    <li><strong>Емкость аккумулятора:</strong> 12 000 мАч (44.4 Вт·ч)</li>
+                    <li><strong>Интерфейсы:</strong> USB-C (вход/выход), USB-A (быстрая зарядка QC)</li>
+                    <li><strong>Защита:</strong> интеллектуальные зажимы с защитой от переполюсовки и КЗ</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <strong>Плюсы:</strong>
+                        <ul>
+                            <li>Точный цифровой LED-дисплей остатка заряда</li>
+                            <li>Компактный корпус, не занимает места в бардачке</li>
+                            <li>Надежный встроенный фонарик с режимом SOS</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <strong>Минусы:</strong>
+                        <ul>
+                            <li>Провода «крокодилов» коротковаты для некоторых внедорожников</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-1" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-ali-1" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+                </div>
+            </section>
+
+            <section class="product-card" id="70mai-max">
+                <div class="product-badge">2 место • Максимальная надежность</div>
+                <h2>2. 70mai Jump Starter Max (Midrive PS06 / 18000 mAh)</h2>
+                <p class="product-desc">Тяжелая артиллерия от экосистемы Xiaomi. Емкость 18 000 мАч и пиковый ток 1000A позволяют без труда оживлять бензиновые моторы объемом до 8.0 л и дизели до 3.5 л. В комплекте идет выход 12V (гнездо прикуривателя) для питания автопылесосов и компрессоров.</p>
+                <ul class="specs-list">
+                    <li><strong>Пиковый ток:</strong> 1000 А (пусковой 450 А)</li>
+                    <li><strong>Емкость:</strong> 18 000 мАч (66.6 Вт·ч)</li>
+                    <li><strong>Выходы:</strong> USB-A 5V/2.4A, DC 12V/10A (прикуриватель), Type-C</li>
+                    <li><strong>Особенности:</strong> кнопка Boost для батарей с напряжением ниже 1V</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <strong>Плюсы:</strong>
+                        <ul>
+                            <li>Наличие переходника на автомобильный прикуриватель 12V</li>
+                            <li>Режим принудительного пуска при нулевом заряде АКБ</li>
+                            <li>Качественный защитный чехол в комплекте</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <strong>Минусы:</strong>
+                        <ul>
+                            <li>Вес около 0.7 кг и крупные габариты</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-2" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-ali-2" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+                </div>
+            </section>
+
+            <section class="product-card" id="carku-pro30">
+                <div class="product-badge">3 место • Профессиональный стандарт</div>
+                <h2>3. CARKU Pro-30 (1200A / 17000 mAh)</h2>
+                <p class="product-desc">Один из самых авторитетных брендов на рынке СНГ с честно заявленными параметрами тока. Модель Pro-30 выдает кратковременный пиковый ток до 1200А и отлично справляется с пуском коммерческого транспорта, кроссоверов и дизельных внедорожников в сильный мороз.</p>
+                <ul class="specs-list">
+                    <li><strong>Пиковый ток:</strong> 1200 А (пусковой 500 А)</li>
+                    <li><strong>Емкость:</strong> 17 000 мАч (62.9 Вт·ч)</li>
+                    <li><strong>Рабочая температура:</strong> от -30°C до +60°C</li>
+                    <li><strong>Интерфейсы:</strong> Type-C PD 60W, 2x USB-A (QC 3.0), выход 15V/10A</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <strong>Плюсы:</strong>
+                        <ul>
+                            <li>Быстрая двусторонняя зарядка Power Delivery 60W</li>
+                            <li>Морозостойкие силовые ячейки с низким саморазрядом</li>
+                            <li>Толстые медные провода с мощными подпружиненными клещами</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <strong>Минусы:</strong>
+                        <ul>
+                            <li>Высокая стоимость по сравнению с базовыми аналогами</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-3" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-ali-3" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+                </div>
+            </section>
+
+            <section class="product-card" id="utrai-jstar5">
+                <div class="product-badge">4 место • Комбайн 4-в-1 с компрессором</div>
+                <h2>4. UTRAI Jstar 5 (2000A / 24000 mAh + компрессор)</h2>
+                <p class="product-desc">Универсальный инструмент для дальних поездок: бустер со сверхмощным пиковым током 2000А, пауэрбанк высокой емкости и встроенный цифровой компрессор для накачки колес (до 150 PSI с автостопом).</p>
+                <ul class="specs-list">
+                    <li><strong>Пиковый ток:</strong> 2000 А (пусковой 1000 А)</li>
+                    <li><strong>Емкость:</strong> 24 000 мАч (88.8 Вт·ч)</li>
+                    <li><strong>Компрессор:</strong> встроенный, цифровое управление давлением</li>
+                    <li><strong>Фонарь:</strong> рассеянный кемпинговый свет 5W + направленный луч</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <strong>Плюсы:</strong>
+                        <ul>
+                            <li>Комбинация пускового устройства и автокомпрессора</li>
+                            <li>Огромный запас емкости и мощности пуска</li>
+                            <li>Мощный кемпинговый фонарь для ночного ремонта</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <strong>Минусы:</strong>
+                        <ul>
+                            <li>Массивный корпус весом более 1.3 кг</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-4" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-ali-4" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+                </div>
+            </section>
+
+            <section class="product-card" id="fubag-drive450">
+                <div class="product-badge">5 место • Проверенная классика</div>
+                <h2>5. FUBAG Drive 450 (900A / 12000 mAh)</h2>
+                <p class="product-desc">Проверенное временем решение от немецкого бренда силовой техники. Оснащено многоступенчатой системой защиты Smart Clamps от перегрузок и обратного тока генератора, стабильно работает при минусовых температурах.</p>
+                <ul class="specs-list">
+                    <li><strong>Пиковый ток:</strong> 900 А (пусковой 450 А)</li>
+                    <li><strong>Емкость:</strong> 12 000 мАч</li>
+                    <li><strong>Подходит для:</strong> бензин до 4.5 л, дизель до 2.5 л</li>
+                    <li><strong>Разъемы:</strong> 2x USB с поддержкой быстрой зарядки</li>
+                </ul>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <strong>Плюсы:</strong>
+                        <ul>
+                            <li>Прочный ударостойкий пластик корпуса</li>
+                            <li>Высокая надежность контактной группы</li>
+                            <li>Сервисная поддержка в РФ</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <strong>Минусы:</strong>
+                        <ul>
+                            <li>Нет разъема Type-C для быстрой зарядки самого устройства</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-5" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+                    <a href="https://ya.cc/m/placeholder-jumpstarter-ali-5" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+                </div>
+            </section>
+
+            <section class="guide-block">
+                <h2>Как выбрать пусковое устройство: советы редакции</h2>
+                <ol>
+                    <li><strong>Пусковой ток, а не пиковый:</strong> Маркетологи любят писать цифры «2000А» и выше. Обращайте внимание на <em>номинальный пусковой ток</em>: для бензиновых моторов до 2.0 л достаточно 300-400А, для моторов 3.0-4.0 л или дизелей требуется от 500-600А.</li>
+                    <li><strong>Умные провода (Smart Clamps):</strong> Блок защиты на силовом кабеле должен блокировать подачу тока при переполюсовке (если случайно перепутали плюс с минусом) и защищать устройство от скачка напряжения, когда заведшийся двигатель включит штатный генератор.</li>
+                    <li><strong>Зимняя эксплуатация:</strong> Литиевые аккумуляторы теряют емкость на холоде. Не храните бустер в автомобиле в сильный мороз — держите его дома или берите с собой перед выходом.</li>
+                </ol>
+            </section>
+        </div>
+
+        <div class="article-author-box">
+            <p><strong>Автор:</strong> Алексей Техногидов | <strong>Опубликовано:</strong> Сентябрь 2026</p>
+        </div>
+    </article>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-col">
+            <h4>ТехноГид</h4>
+            <p>Честные обзоры гаджетов, электроники и автотоваров. Экспертные подборки с реальным опытом использования.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="../index.html">Все обзоры</a></li>
+                <li><a href="../about.html">О проекте</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+                <li><a href="../privacy.html">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Информация</h4>
+            <p class="disclaimer">Сайт может содержать партнерские ссылки. При переходе по ссылкам мы можем получать комиссионное вознаграждение без дополнительных расходов для покупателя.</p>
+            <p class="copy">© 2026 ТехноГид. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+"""
+
+# 1. Запись статьи
+os.makedirs("articles", exist_ok=True)
+article_path = "articles/top-jump-starters-2026.html"
+with open(article_path, "w", encoding="utf-8") as f:
+    f.write(article_html.strip())
+print(f"Created {article_path}")
+
+# 2. Добавление карточки в index.html
+if os.path.exists("index.html"):
+    with open("index.html", "r", encoding="utf-8") as f:
+        idx = f.read()
+
+    new_card = """            <article class="article-card">
+                <div class="badge">Автогаджеты</div>
+                <h2><a href="articles/top-jump-starters-2026.html">Топ-5 лучших пусковых устройств (бустеров) 2026 года</a></h2>
+                <p>Рейтинг надежных джамп-стартеров для запуска бензиновых и дизельных двигателей в любой мороз: тесты тока, емкость и безопасность.</p>
+                <div class="article-meta">
+                    <span>Сентябрь 2026</span> • <span>7 мин</span>
+                </div>
+            </article>"""
+
+    if "top-jump-starters-2026.html" not in idx:
+        if '<div class="articles-grid">' in idx:
+            idx = idx.replace('<div class="articles-grid">', f'<div class="articles-grid">\n{new_card}')
+        elif '<main class="container">' in idx:
+            idx = idx.replace('<main class="container">', f'<main class="container">\n{new_card}')
+        with open("index.html", "w", encoding="utf-8") as f:
+            f.write(idx)
+        print("Added new article card to index.html")
+
+# 3. Обновление sitemap.xml
+if os.path.exists("sitemap.xml"):
+    with open("sitemap.xml", "r", encoding="utf-8") as f:
+        smap = f.read()
+    new_url_entry = f"  <url>\n    <loc>{base_url}/articles/top-jump-starters-2026.html</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>"
+    if "top-jump-starters-2026.html" not in smap:
+        smap = smap.replace("</urlset>", f"{new_url_entry}\n</urlset>")
+        with open("sitemap.xml", "w", encoding="utf-8") as f:
+            f.write(smap)
+        print("Updated sitemap.xml")
+
+# 4. Git commit & push
+subprocess.run(["git", "add", "."], check=True)
+subprocess.run(["git", "commit", "-m", "Add new article: Top jump starters 2026, update index and sitemap"], check=True)
+subprocess.run(["git", "push", "origin", "master"], check=True)
+print("SUCCESS_5TH_ARTICLE_DEPLOYED")
