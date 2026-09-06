@@ -1,0 +1,302 @@
+import os
+import subprocess
+from datetime import date
+
+today = date.today().isoformat()
+base_url = "https://lebserval-art.github.io"
+
+article_html = """<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Топ-5 лучших ТВ-приставок (Smart TV Box) в 2026 году — Рейтинг медиаплееров на Android и Google TV</title>
+ <meta name="description" content="Рейтинг надежных ТВ-приставок и медиаплееров 2026 года для 4K HDR телевизоров. Тесты производительности, поддержка кодеков AV1 и Dolby Vision, сравнение Google TV и tvOS.">
+ <link rel="stylesheet" href="../style.css">
+ <!-- Yandex.Metrika counter -->
+ <script type="text/javascript">
+ (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+ m[i].l=1*new Date();
+ for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+ (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ ym(112303137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/112303137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+<header class="site-header">
+ <div class="container header-container">
+ <a href="../index.html" class="logo">Техно<span>Гид</span></a>
+ <nav class="main-nav">
+ <a href="../index.html">Главная</a>
+ <a href="../about.html">О проекте</a>
+ <a href="../contacts.html">Контакты</a>
+ </nav>
+ </div>
+</header>
+
+<main class="container content-page">
+ <article class="article-full">
+ <header class="article-header">
+ <span class="product-badge">Умный дом & ТВ</span>
+ <h1>Топ-5 лучших ТВ-приставок в 2026 году: прокачиваем любой телевизор до флагманского Smart TV</h1>
+ <div class="article-meta" style="color: #64748b; margin: 10px 0 20px 0; font-size: 0.9rem;">
+ <span>Обновлено: Сентябрь 2026</span> • <span>Время чтения: 6 мин</span>
+ </div>
+ </header>
+
+ <div class="article-intro">
+ <p>Даже дорогие телевизоры со встроенным Smart TV со временем начинают притормаживать, терять поддержку свежих версий онлайн-кинотеатров или страдают от нехватки памяти. Внешний медиаплеер (ТВ-бокс или стик) решает эту проблему раз и навсегда: дарит плавный интерфейс Google TV, всеядность к тяжелым видеофайлам в 4K HDR с высоким битрейтом и поддержку многоканального звука Dolby Atmos. Отобрали 5 лучших моделей 2026 года под любой бюджет и задачи.</p>
+ </div>
+
+ <section class="product-card" id="xiaomi-box-s">
+ <div class="product-badge">1 место • Народный хит</div>
+ <h2>1. Xiaomi TV Box S (2nd Gen) 4K Ultra HD</h2>
+ <p class="product-desc">Второе поколение бестселлера от Xiaomi на платформе Google TV. Получило обновленный процессор Amlogic S905X4 с аппаратным декодированием современного кодека AV1, поддержку Dolby Vision и HDR10+, а также удобный Bluetooth-пульт с голосовым поиском.</p>
+ <ul class="specs-list">
+ <li><strong>ОС:</strong> Google TV (на базе Android 11/12)</li>
+ <li><strong>Память:</strong> 2 ГБ ОЗУ / 8 ГБ eMMC</li>
+ <li><strong>Видео и звук:</strong> 4K @ 60fps, Dolby Vision, HDR10+, Dolby Atmos, DTS-HD</li>
+ <li><strong>Беспроводные модули:</strong> Wi-Fi 5 (2.4/5 ГГц), Bluetooth 5.2</li>
+ </ul>
+ <div class="pros-cons">
+ <div class="pros">
+ <strong>Плюсы:</strong>
+ <ul>
+ <li>Официальная сертификация Netflix и Google (полный 4K во всех стримингах)</li>
+ <li>Аппаратная поддержка кодека AV1 (YouTube 4K без нагрева)</li>
+ <li>Шустрый Bluetooth-пульт с гироскопом и микрофоном</li>
+ </ul>
+ </div>
+ <div class="cons">
+ <strong>Минусы:</strong>
+ <ul>
+ <li>Всего 8 ГБ встроенной памяти (под большие игры мало)</li>
+ <li>Нет встроенного порта Ethernet (подключение по кабелю только через USB-хаб)</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card-actions">
+ <a href="https://market.yandex.ru/search?text=Xiaomi%20TV%20Box%20S%202nd%20Gen" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+ <a href="https://aliexpress.ru/wholesale?SearchText=Xiaomi%20TV%20Box%20S%202nd%20Gen" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+ </div>
+ </section>
+
+ <section class="product-card" id="yandex-module">
+ <div class="product-badge">2 место • Идеально для России</div>
+ <h2>2. Яндекс Модуль с голосовым помощником Алиса</h2>
+ <p class="product-desc">Компактная медиаприставка, заточенная под экосистему Яндекса и отечественные онлайн-кинотеатры (Кинопоиск, Иви, Okko, Premier, KION). Пульт с микрофоном позволяет управлять воспроизведением и устройствами умного дома голосом, а режим «Тандем» объединяет Модуль со Станцией Яндекса в одну акустическую систему.</p>
+ <ul class="specs-list">
+ <li><strong>ОС:</strong> Яндекс ТВ (на базе Android Open Source Project)</li>
+ <li><strong>Память:</strong> 2 ГБ ОЗУ / 32 ГБ ПЗУ</li>
+ <li><strong>Разрешение:</strong> 4K UHD, HDR10, Dolby Vision</li>
+ <li><strong>Особенности:</strong> режим тандема с колонками Яндекс Станция</li>
+ </ul>
+ <div class="pros-cons">
+ <div class="pros">
+ <strong>Плюсы:</strong>
+ <ul>
+ <li>Бесшовная интеграция с Кинопоиском и Яндекс Музыкой</li>
+ <li>Быстрый и точный голосовой поиск Алисы по всем кинотеатрам сразу</li>
+ <li>32 ГБ встроенной памяти под любые сторонние APK-приложения</li>
+ </ul>
+ </div>
+ <div class="cons">
+ <strong>Минусы:</strong>
+ <ul>
+ <li>Без активной подписки Яндекс Плюс функционал сильно ограничен</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card-actions">
+ <a href="https://market.yandex.ru/search?text=Яндекс%20Модуль%20с%20Алисой" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+ <a href="https://aliexpress.ru/wholesale?SearchText=Yandex%20Module" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+ </div>
+ </section>
+
+ <section class="product-card" id="realme-stick">
+ <div class="product-badge">3 место • Компактный форм-фактор</div>
+ <h2>3. Realme 4K Smart Google TV Stick</h2>
+ <p class="product-desc">Ультракомпактный стик размером с зажигалку, который прячется прямо в порт HDMI сзади телевизора. Идеальное решение для подвешенных вплотную к стене ТВ и для поездок. Полноценная система Google TV работает быстро и без зависаний.</p>
+ <ul class="specs-list">
+ <li><strong>ОС:</strong> Google TV</li>
+ <li><strong>Память:</strong> 2 ГБ RAM / 8 ГБ ROM</li>
+ <li><strong>Формат:</strong> HDMI Dongle (прямое подключение в разъем)</li>
+ <li><strong>Связь:</strong> Dual-band Wi-Fi, Bluetooth 5.0</li>
+ </ul>
+ <div class="pros-cons">
+ <div class="pros">
+ <strong>Плюсы:</strong>
+ <ul>
+ <li>Абсолютно незаметен за корпусом телевизора (нет лишних проводов)</li>
+ <li>Питается от USB-порта многих современных ТВ</li>
+ <li>Быстрое переключение между приложениями и чистый интерфейс</li>
+ </ul>
+ </div>
+ <div class="cons">
+ <strong>Минусы:</strong>
+ <ul>
+ <li>Нельзя подключить флешку без специального OTG-разветвителя</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card-actions">
+ <a href="https://market.yandex.ru/search?text=Realme%204K%20Smart%20Google%20TV%20Stick" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+ <a href="https://aliexpress.ru/wholesale?SearchText=Realme%204K%20TV%20Stick" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+ </div>
+ </section>
+
+ <section class="product-card" id="mecool-km2">
+ <div class="product-badge">4 место • Для энтузиастов и торрентов</div>
+ <h2>4. Mecool KM2 Plus Deluxe 4K</h2>
+ <p class="product-desc">Ультимативный медиаплеер для тех, кто любит смотреть тяжелые 4K Blu-ray рипы и торренты напрямую без скачивания. Здесь установлен мощный процессор Amlogic S905X4-J, 4 ГБ оперативной памяти, гигабитный сетевой порт Ethernet (1000 Мбит/с) и скоростной модуль Wi-Fi 6.</p>
+ <ul class="specs-list">
+ <li><strong>Память:</strong> 4 ГБ DDR4 / 32 ГБ eMMC</li>
+ <li><strong>Сетевые интерфейсы:</strong> Gigabit LAN 1000M, Wi-Fi 6 (802.11ax)</li>
+ <li><strong>Порты:</strong> 2x USB (включая USB 3.0), слот MicroSD, оптический SPDIF, AV</li>
+ <li><strong>Аудио/Видео:</strong> Dolby Vision, Dolby Atmos, сертификат Google/Netflix</li>
+ </ul>
+ <div class="pros-cons">
+ <div class="pros">
+ <strong>Плюсы:</strong>
+ <ul>
+ <li>Гигабитный LAN порт тянет любые тяжелые потоки со скоростью свыше 100 Мбит/с</li>
+ <li>4 ГБ оперативной памяти исключают выгрузку фоновых плееров</li>
+ <li>Поддержка современных Wi-Fi 6 роутеров</li>
+ </ul>
+ </div>
+ <div class="cons">
+ <strong>Минусы:</strong>
+ <ul>
+ <li>Заметно дороже стандартных моделей Xiaomi</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card-actions">
+ <a href="https://market.yandex.ru/search?text=Mecool%20KM2%20Plus%20Deluxe" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+ <a href="https://aliexpress.ru/wholesale?SearchText=Mecool%20KM2%20Plus%20Deluxe" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+ </div>
+ </section>
+
+ <section class="product-card" id="apple-tv">
+ <div class="product-badge">5 место • Премиум и эталонная плавность</div>
+ <h2>5. Apple TV 4K (3rd Gen)</h2>
+ <p class="product-desc">Флагманский медиаплеер на процессоре A15 Bionic (как в iPhone 13/14). Выдает недостижимую для бюджетных Android-приставок плавность анимаций, отсутствие какой-либо сторонней рекламы на главном экране и автоматическую калибровку баланса белого с экрана смартфона.</p>
+ <ul class="specs-list">
+ <li><strong>Процессор:</strong> Apple A15 Bionic</li>
+ <li><strong>Память:</strong> 64 ГБ или 128 ГБ (версия с Ethernet и Thread)</li>
+ <li><strong>ОС:</strong> tvOS</li>
+ <li><strong>Звук и видео:</strong> HDR10+, Dolby Vision, Dolby Atmos, автофреймрейт (AFR)</li>
+ </ul>
+ <div class="pros-cons">
+ <div class="pros">
+ <strong>Плюсы:</strong>
+ <ul>
+ <li>Безупречная скорость интерфейса и долговечность поддержки</li>
+ <li>Аппаратный автофреймрейт (видео идет без микрорывков)</li>
+ <li>Превосходный металлический пульт Siri Remote с сенсорным кликпадом</li>
+ </ul>
+ </div>
+ <div class="cons">
+ <strong>Минусы:</strong>
+ <ul>
+ <li>Закрытая ОС (нельзя свободно устанавливать неофициальные APK-приложения)</li>
+ <li>Высокая стоимость</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card-actions">
+ <a href="https://market.yandex.ru/search?text=Apple%20TV%204K%203rd%20gen" class="btn btn-primary" target="_blank" rel="nofollow noopener">Купить на Яндекс Маркете</a>
+ <a href="https://aliexpress.ru/wholesale?SearchText=Apple%20TV%204K%202022" class="btn btn-secondary" target="_blank" rel="nofollow noopener">Купить на AliExpress</a>
+ </div>
+ </section>
+
+ <section class="static-article" style="margin-top: 30px;">
+ <h2>Как выбрать медиаплеер в 2026 году: краткий чек-лист</h2>
+ <ol style="padding-left: 20px; margin-top: 10px; line-height: 1.8; color: #334155;">
+ <li><strong>Google TV против кастомных прошивок:</strong> Выбирайте сертифицированные устройства. Сертификация Google гарантирует стабильную работу Google Play, автообновления и лицензии Widevine L1, необходимые для воспроизведения легального 4K-контента.</li>
+ <li><strong>Объем оперативной памяти:</strong> Для комфортного просмотра видео и YouTube в 2026 году минимум составляет 2 ГБ ОЗУ. Для тяжелых файлов через Nova Video Player или Vimu лучше присмотреться к моделям с 4 ГБ.</li>
+ <li><strong>Поддержка кодека AV1:</strong> YouTube и ведущие стриминги активно переводят видеопотоки в формат AV1. ТВ-боксы со старыми чипами греются и тормозят на таких роликах, современные процессоры (Amlogic S905X4, Realtek RTD1319) декодируют его на аппаратном уровне.</li>
+ </ol>
+ </section>
+ </article>
+</main>
+
+<footer class="site-footer">
+ <div class="container footer-content">
+ <div class="footer-col">
+ <h4>ТехноГид</h4>
+ <p>Честные обзоры гаджетов, потребительской электроники и автотоваров. Экспертные подборки с реальным опытом использования.</p>
+ </div>
+ <div class="footer-col">
+ <h4>Навигация</h4>
+ <ul>
+ <li><a href="../index.html">Все обзоры</a></li>
+ <li><a href="../about.html">О проекте</a></li>
+ <li><a href="../contacts.html">Контакты</a></li>
+ <li><a href="../privacy.html">Политика конфиденциальности</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Информация</h4>
+ <p class="disclaimer">Сайт может содержать партнерские ссылки. При переходе по ссылкам мы можем получать комиссионное вознаграждение без дополнительных расходов для покупателя.</p>
+ <p class="copy">© 2026 ТехноГид. Все права защищены.</p>
+ </div>
+ </div>
+</footer>
+</body>
+</html>
+"""
+
+# 1. Запись статьи
+os.makedirs("articles", exist_ok=True)
+with open("articles/top-tv-boxes-2026.html", "w", encoding="utf-8") as f:
+ f.write(article_html.strip())
+print("Created articles/top-tv-boxes-2026.html")
+
+# 2. Добавление карточки анонса в index.html
+if os.path.exists("index.html"):
+ with open("index.html", "r", encoding="utf-8") as f:
+ idx = f.read()
+
+ new_card = """ <article class="article-card">
+ <div class="card-badge">Электроника</div>
+ <h3><a href="articles/top-tv-boxes-2026.html">Топ-5 лучших ТВ-приставок (Smart TV Box) 2026 года</a></h3>
+ <p>Рейтинг проверенных медиаплееров на Android и Google TV: 4K HDR, кодек AV1, сравнение Xiaomi, Apple TV и Яндекс Модуля.</p>
+ <div class="card-footer">
+ <span class="date">Сентябрь 2026</span>
+ <a href="articles/top-tv-boxes-2026.html" class="read-more">Читать обзор →</a>
+ </div>
+ </article>"""
+
+ if "top-tv-boxes-2026.html" not in idx:
+ if '<div class="articles-grid">' in idx:
+ idx = idx.replace('<div class="articles-grid">', f'<div class="articles-grid">\n{new_card}')
+ elif '<main class="container">' in idx:
+ idx = idx.replace('<main class="container">', f'<main class="container">\n{new_card}')
+ with open("index.html", "w", encoding="utf-8") as f:
+ f.write(idx)
+ print("Added new card to index.html")
+
+# 3. Обновление sitemap.xml
+if os.path.exists("sitemap.xml"):
+ with open("sitemap.xml", "r", encoding="utf-8") as f:
+ smap = f.read()
+ new_url_entry = f""" <url>
+ <loc>{base_url}/articles/top-tv-boxes-2026.html</loc>
+ <lastmod>{today}</lastmod>
+ <changefreq>weekly</changefreq>
+ <priority>0.8</priority>
+ </url>"""
+ if "top-tv-boxes-2026.html" not in smap:
+ smap = smap.replace("</urlset>", f"{new_url_entry}\n</urlset>")
+ with open("sitemap.xml", "w", encoding="utf-8") as f:
+ f.write(smap)
+ print("Updated sitemap.xml")
+
+# 4. Деплой
+subprocess.run(["git", "add", "."], check=True)
+subprocess.run(["git", "commit", "-m", "Add article: Top TV boxes 2026, update index and sitemap"], check=True)
+subprocess.run(["git", "push", "origin", "master"], check=True)
+print("SUCCESS_TV_BOXES_DEPLOYED")
