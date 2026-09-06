@@ -172,3 +172,58 @@ body {
  gap: 25px;
  }
 }
+
+
+/* Article & Links Styling */
+a {
+ color: #38bdf8;
+ text-decoration: none;
+}
+
+a:hover {
+ color: #7dd3fc;
+ text-decoration: underline;
+}
+
+.article-full a, .content-page a {
+ color: #38bdf8;
+}
+
+.btn, a.btn, a.read-more {
+ display: inline-block;
+ padding: 10px 18px;
+ border-radius: 8px;
+ font-weight: 600;
+ text-decoration: none !important;
+ transition: all 0.2s ease;
+ margin-top: 10px;
+ margin-right: 10px;
+}
+
+.btn-primary, a.btn-primary {
+ background: #facc15;
+ color: #0f172a !important;
+}
+
+.btn-primary:hover, a.btn-primary:hover {
+ background: #eab308;
+ color: #000 !important;
+}
+
+.btn-secondary, a.btn-secondary {
+ background: #e11d48;
+ color: #ffffff !important;
+}
+
+.btn-secondary:hover, a.btn-secondary:hover {
+ background: #be123c;
+ color: #ffffff !important;
+}
+
+.product-card {
+ background: #1e293b;
+ border: 1px solid #334155;
+ border-radius: 12px;
+ padding: 24px;
+ margin-bottom: 24px;
+}
