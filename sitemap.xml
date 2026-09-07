@@ -60,4 +60,34 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://techno-gid.ru/zigbee-starter-guide.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://techno-gid.ru/articles/steam-deck-oled-vs-switch-oled.html</loc>
+        <lastmod>2026-09-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://techno-gid.ru/articles/vless-amnezia-router-setup.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://techno-gid.ru/articles/type-c-dock-station-workstation-setup.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://techno-gid.ru/articles/local-game-streaming-guide.html</loc>
+        <lastmod>2026-09-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
