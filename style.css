@@ -357,8 +357,8 @@ body > main:not(.container) {
 .date, .read-time { font-size: 0.78rem; color: var(--text-muted); }
 
 /* ---------- Article layout ---------- */
-.content-page { flex: 1; padding: 40px 0 56px; }
-.article-page { flex: 1; padding: 28px 0 60px; }
+.content-page { flex: 1; padding: 40px 20px 56px; }
+.article-page { flex: 1; padding: 28px 20px 60px; }
 
 .breadcrumbs {
     max-width: var(--measure);
@@ -793,6 +793,96 @@ a.btn-secondary:hover { border-color: var(--accent); }
     background: var(--surface-2);
     border: 1px solid var(--border);
     border-radius: var(--radius);
+}
+
+/* ---------- Affiliate widget ---------- */
+.affiliate-card {
+    margin: 28px 0;
+    padding: 20px 22px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.affiliate-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin-bottom: 14px;
+}
+
+.affiliate-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.affiliate-seller {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.affiliate-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 440px;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background-color: #e6362f;
+    background-image: linear-gradient(135deg, #ff6a3d 0%, #e6362f 60%, #d81f26 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: 0 8px 20px -8px rgba(216, 31, 38, 0.55);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.affiliate-btn svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.affiliate-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+    box-shadow: 0 14px 26px -10px rgba(216, 31, 38, 0.6);
+}
+
+.affiliate-btn:active { transform: translateY(0); }
+
+.affiliate-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.affiliate-card .affiliate-disclaimer {
+    margin: 10px 0 0;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+}
+
+.affiliate-card > p {
+    margin: 0 0 14px;
+    font-size: 0.92rem;
+    color: var(--text-soft);
 }
 
 /* ---------- Related posts ---------- */
