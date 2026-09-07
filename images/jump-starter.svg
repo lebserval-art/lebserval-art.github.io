@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Пусковое устройство (бустер, джамп-стартер)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- booster body -->
+    <rect x="150" y="150" width="230" height="150" rx="18" fill="#ffffff"/>
+    <rect x="176" y="176" width="120" height="60" rx="8" fill="#0f172a"/>
+    <!-- LED bars -->
+    <rect x="188" y="256" width="18" height="20" rx="3" fill="#22c55e" stroke-width="4"/>
+    <rect x="214" y="256" width="18" height="20" rx="3" fill="#22c55e" stroke-width="4"/>
+    <rect x="240" y="256" width="18" height="20" rx="3" fill="#facc15" stroke-width="4"/>
+    <rect x="266" y="256" width="18" height="20" rx="3" fill="#e2e8f0" stroke-width="4"/>
+    <!-- ports -->
+    <rect x="324" y="188" width="34" height="16" rx="4" fill="#e2e8f0" stroke-width="4"/>
+    <rect x="324" y="216" width="34" height="16" rx="4" fill="#e2e8f0" stroke-width="4"/>
+  </g>
+  <!-- cables -->
+  <path d="M380 210 q70 -10 90 -70" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M380 240 q90 20 110 90" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <!-- red clamp -->
+  <g stroke="#ef4444" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M470 110 l34 -18 M470 140 l34 18"/>
+    <path d="M470 110 q-16 15 0 30"/>
+  </g>
+  <!-- black clamp -->
+  <g stroke="#1e293b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M490 300 l34 -18 M490 330 l34 18"/>
+    <path d="M490 300 q-16 15 0 30"/>
+  </g>
+  <!-- spark -->
+  <path d="M520 200 l16 -10 -8 16 18 4 -22 14 4 -18z" fill="#facc15" stroke="#eab308" stroke-width="3" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Мощный внешний аккумулятор (пауэрбанк)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- body -->
+    <rect x="200" y="96" width="176" height="230" rx="24" fill="#ffffff"/>
+    <!-- display -->
+    <rect x="228" y="128" width="120" height="70" rx="10" fill="#0f172a"/>
+    <!-- charge level -->
+    <rect x="242" y="150" width="70" height="26" rx="4" fill="#22c55e" stroke="none"/>
+    <!-- ports -->
+    <rect x="248" y="238" width="34" height="18" rx="4" fill="#e2e8f0" stroke-width="4"/>
+    <rect x="296" y="238" width="34" height="18" rx="4" fill="#e2e8f0" stroke-width="4"/>
+    <rect x="264" y="284" width="50" height="14" rx="4" fill="#e2e8f0" stroke-width="4"/>
+  </g>
+  <!-- USB-C cable to laptop -->
+  <path d="M376 245 q80 0 96 -70" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="420" y="120" width="116" height="70" rx="8" fill="#ffffff"/>
+    <path d="M410 200 h136 l-12 -10 h-112z" fill="#e2e8f0"/>
+  </g>
+  <!-- bolt -->
+  <path d="M300 60 l-26 44 h22 l-12 40 40 -52 h-24 l20 -32z" fill="#facc15" stroke="#eab308" stroke-width="3" stroke-linejoin="round"/>
+</svg>

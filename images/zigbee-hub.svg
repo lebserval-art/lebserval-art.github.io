@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Хаб умного дома Zigbee и датчики">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <!-- signal rings -->
+  <g fill="none" stroke="#2563eb" stroke-width="4" opacity="0.35">
+    <circle cx="320" cy="210" r="70"/>
+    <circle cx="320" cy="210" r="115"/>
+    <circle cx="320" cy="210" r="160"/>
+  </g>
+  <!-- hub -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="320" cy="232" rx="70" ry="22" fill="#e2e8f0"/>
+    <path d="M250 232 v-26 a70 22 0 0 1 140 0 v26" fill="#ffffff"/>
+    <ellipse cx="320" cy="206" rx="70" ry="22" fill="#ffffff"/>
+    <circle cx="320" cy="206" r="10" fill="#22c55e" stroke="none"/>
+  </g>
+  <!-- sensor nodes -->
+  <g fill="#ffffff" stroke="#1e293b" stroke-width="5" stroke-linejoin="round">
+    <rect x="70" y="120" width="54" height="54" rx="10"/>
+    <rect x="516" y="110" width="54" height="54" rx="10"/>
+    <rect x="120" y="300" width="54" height="54" rx="10"/>
+    <rect x="470" y="300" width="54" height="54" rx="10"/>
+  </g>
+  <g fill="#2563eb">
+    <circle cx="97" cy="147" r="8"/>
+    <circle cx="543" cy="137" r="8"/>
+    <circle cx="147" cy="327" r="8"/>
+    <circle cx="497" cy="327" r="8"/>
+  </g>
+</svg>

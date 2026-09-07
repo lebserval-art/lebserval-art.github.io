@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Робот-пылесос со станцией самоочистки">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <!-- floor -->
+  <path d="M60 320 h520" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <!-- dock -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M430 320 v-150 h90 v150" fill="#ffffff"/>
+    <rect x="446" y="186" width="58" height="70" rx="6" fill="#e2e8f0"/>
+    <path d="M430 300 h90"/>
+  </g>
+  <!-- robot -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M150 320 a110 90 0 0 1 220 0z" fill="#ffffff"/>
+    <circle cx="260" cy="250" r="26" fill="#0f172a" stroke="none"/>
+    <circle cx="260" cy="250" r="10" fill="#38bdf8" stroke="none"/>
+    <path d="M175 300 a90 70 0 0 1 170 0" />
+  </g>
+  <!-- lidar sweep -->
+  <g fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <path d="M260 250 l-90 -34 M260 250 l-70 -64 M260 250 l70 -64 M260 250 l90 -34"/>
+  </g>
+  <!-- dust sparkles -->
+  <g fill="#facc15" stroke="#eab308" stroke-width="2">
+    <circle cx="120" cy="300" r="5"/>
+    <circle cx="96" cy="316" r="4"/>
+  </g>
+</svg>
