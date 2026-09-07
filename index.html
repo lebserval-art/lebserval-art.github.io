@@ -1,87 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="yandex-verification" content="6pjcg0idg6kg6ho5" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="6pjcg0idg6kg6ho5" />
+    <meta name="yandex-verification" content="sw856fm90wqwnpxc" />
     <meta name="mitgo-verification" content="d9a7e757-5831-469d-81b7-4cf00b416441" />
     <meta name="mitgo-verification" content="5cf5b0d8-d29c-44e7-ba04-e939a1b88476" />
-    <title>ТехноГид — Экспертные обзоры и рейтинги техники и автотоваров 2026</title>
-    <meta name="description" content="Честные обзоры, сравнения и рейтинги умной электроники, гаджетов для дома и автотоваров. Выбирайте лучшее с ТехноГид.">
-    <meta name="yandex-verification" content="sw856fm90wqwnpxc" />
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --bg: #f8fafc;
-            --surface: #ffffff;
-            --text: #0f172a;
-            --text-muted: #64748b;
-            --border: #e2e8f0;
-            --accent: #f59e0b;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-        a { color: inherit; }
-        img { max-width: 100%; display: block; }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    <title>ТехноГид — экспертные обзоры, сравнения и гайды по технике 2026</title>
+    <meta name="description" content="Честные обзоры, сравнения и рейтинги гаджетов, сетевого оборудования и автотоваров. Разбираем портативные консоли, домашний VPN, док-станции и умный дом без маркетинговой шелухи.">
+    <link rel="canonical" href="https://techno-gid.ru/">
 
-        header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
-        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; min-height: 70px; gap: 10px 16px; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; }
-        .logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-        .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
-        .nav-links a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--primary); }
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ТехноГид">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://techno-gid.ru/">
+    <meta property="og:title" content="ТехноГид — экспертные обзоры и гайды по технике 2026">
+    <meta property="og:description" content="Портативные консоли, домашний VPN на роутере, док-станции и умный дом — разбираем технику честно и по делу.">
+    <meta property="og:image" content="https://techno-gid.ru/images/handhelds-battle.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ТехноГид — экспертные обзоры и гайды по технике 2026">
+    <meta name="twitter:description" content="Портативные консоли, домашний VPN на роутере, док-станции и умный дом — разбираем технику честно и по делу.">
+    <meta name="twitter:image" content="https://techno-gid.ru/images/handhelds-battle.svg">
 
-        .hero { padding: 60px 0 40px; text-align: center; }
-        .hero h1 { font-size: 38px; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.02em; }
-        .hero p { font-size: 18px; color: var(--text-muted); max-width: 650px; margin: 0 auto; }
-        .badge { display: inline-block; padding: 4px 12px; background: #dbeafe; color: var(--primary-dark); font-size: 12px; font-weight: 700; border-radius: 99px; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.03em; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin: 10px 0 60px; }
-        .card { background: var(--surface); border-radius: 14px; border: 1px solid var(--border); overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
-        .card:hover { transform: translateY(-4px); box-shadow: 0 18px 30px -14px rgba(15, 23, 42, 0.18); border-color: #cbd5e1; }
-        .card-img { width: 100%; aspect-ratio: 16 / 10; background: #eef2ff; }
-        .card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .card-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
-        .card-tag { font-size: 12px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
-        .card-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
-        .card-desc { font-size: 14px; color: var(--text-muted); margin-bottom: 18px; flex-grow: 1; }
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 14px; }
-        .read-more { color: var(--primary); font-weight: 600; font-size: 14px; }
-        .card:hover .read-more { text-decoration: underline; }
-        .date { font-size: 12px; color: var(--text-muted); }
-
-        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 40px 0; margin-top: 20px; }
-        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; }
-        .footer-col h4 { color: var(--text); margin-bottom: 12px; font-size: 15px; }
-        .footer-col p { color: var(--text-muted); font-size: 14px; }
-        .footer-col ul { list-style: none; }
-        .footer-col li { margin-bottom: 8px; }
-        .footer-col a { color: var(--text-muted); text-decoration: none; font-size: 14px; }
-        .footer-col a:hover { color: var(--primary); }
-        .footer-col .disclaimer { font-size: 12px; margin-bottom: 10px; }
-        .footer-col .copy { font-size: 12px; color: #94a3b8; }
-
-        @media (max-width: 720px) {
-            .nav-wrapper { justify-content: center; }
-            .grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 640px) {
-            .hero { padding: 40px 0 30px; }
-            .hero h1 { font-size: 30px; }
-            .hero p { font-size: 16px; }
-            .nav-links { gap: 14px; font-size: 14px; }
-            .footer-content { grid-template-columns: 1fr; gap: 24px; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-wrapper">
-            <a href="/" class="logo">⚡ ТехноГид</a>
-            <nav class="nav-links">
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo">Техно<span>Гид</span></a>
+            <nav class="main-nav">
+                <a href="#featured">Гайды</a>
                 <a href="#reviews">Обзоры</a>
                 <a href="zigbee-starter-guide.html">Умный дом</a>
                 <a href="about.html">О проекте</a>
@@ -90,20 +41,76 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container home-main">
         <section class="hero">
-            <span class="badge">Гид покупателя 2026</span>
-            <h1>Честные рейтинги и тесты техники</h1>
-            <p>Тестируем новинки, анализируем характеристики и помогаем выбрать надежные устройства без переплаты.</p>
+            <span class="eyebrow">Гид покупателя 2026</span>
+            <h1>Разбираем технику честно и по делу</h1>
+            <p>Сравнения, тесты и практические гайды: от портативных консолей и домашних сетей до автогаджетов и умного дома.</p>
         </section>
 
-        <section class="grid" id="reviews">
+        <section id="featured">
+            <a class="hero-card" href="articles/steam-deck-oled-vs-switch-oled.html">
+                <div class="hero-card__media">
+                    <img src="images/handhelds-battle.svg" alt="Steam Deck OLED против Nintendo Switch OLED" width="640" height="400">
+                </div>
+                <div class="hero-card__body">
+                    <span class="card-tag">Гаджеты и консоли</span>
+                    <h2 class="hero-card__title">Steam Deck OLED против Nintendo Switch OLED: честное сравнение портативок в 2026 году</h2>
+                    <p class="hero-card__desc">Экраны, вес, автономность, библиотека игр и реальные сценарии использования — без маркетинговой шелухи, на основе сотен часов эксплуатации.</p>
+                    <div class="hero-card__meta">
+                        <span>7 сентября 2026</span>
+                        <span>10 мин чтения</span>
+                        <span class="read-more">Читать сравнение →</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="section-head">
+                <h2>Свежие гайды</h2>
+                <span class="muted">Практика и настройка</span>
+            </div>
+
+            <div class="featured-grid">
+                <a class="card" href="articles/vless-amnezia-router-setup.html">
+                    <div class="card-img"><img src="images/vpn-router.svg" alt="Домашний роутер с VPN и раздельным туннелированием" loading="lazy" width="640" height="400"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Сети и безопасность</span>
+                        <h3 class="card-title">Домашний VPN и антиблокировка на роутере: VLESS, Amnezia и раздельное туннелирование</h3>
+                        <p class="card-desc">Почему классические протоколы больше не работают, какое железо тянет шифрование и как оставить банки и Госуслуги на прямом канале.</p>
+                        <div class="card-footer">
+                            <span class="date">7 сентября 2026</span>
+                            <span class="read-more">Читать гайд →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="card" href="articles/type-c-dock-station-workstation-setup.html">
+                    <div class="card-img"><img src="images/typec-dock.svg" alt="Подключение ноутбука через одну Type-C док-станцию" loading="lazy" width="640" height="400"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Рабочее место</span>
+                        <h3 class="card-title">Идеальный сетап на одном кабеле: как подключить ноутбук через Type-C док-станцию</h3>
+                        <p class="card-desc">DP Alt Mode, Power Delivery 100&nbsp;Вт и USB 3.2 — что должно сойтись, чтобы монитор, сеть и периферия заработали от одного провода.</p>
+                        <div class="card-footer">
+                            <span class="date">7 сентября 2026</span>
+                            <span class="read-more">Читать гайд →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="section-head" id="reviews">
+            <h2>Все обзоры и подборки</h2>
+            <span class="muted">Рейтинги 2026</span>
+        </div>
+
+        <section class="grid">
             <a class="card" href="articles/top-dashcams-2026.html">
                 <div class="card-img"><img src="images/dashcam.svg" alt="Автомобильный видеорегистратор с радар-детектором" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автотовары</span>
-                    <h2 class="card-title">Топ-7 видеорегистраторов 2026 года с радар-детектором и ночной съемкой 4K</h2>
-                    <p class="card-desc">Сравнили флагманские комбо-устройства по качеству сенсоров, надежности GPS-баз и устойчивости к морозам.</p>
+                    <h3 class="card-title">Топ-7 видеорегистраторов 2026 года с радар-детектором и ночной съёмкой 4K</h3>
+                    <p class="card-desc">Сравнили флагманские комбо-устройства по качеству сенсоров, надёжности GPS-баз и устойчивости к морозам.</p>
                     <div class="card-footer">
                         <span class="date">2 сентября 2026</span>
                         <span class="read-more">Читать обзор →</span>
@@ -115,8 +122,8 @@
                 <div class="card-img"><img src="images/jump-starter.svg" alt="Пусковое устройство (бустер) для запуска двигателя" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автогаджеты</span>
-                    <h2 class="card-title">Топ-5 лучших пусковых устройств (бустеров) 2026 года</h2>
-                    <p class="card-desc">Рейтинг надежных джамп-стартеров для запуска бензиновых и дизельных двигателей в мороз: тесты тока, емкость и безопасность.</p>
+                    <h3 class="card-title">Топ-5 лучших пусковых устройств (бустеров) 2026 года</h3>
+                    <p class="card-desc">Рейтинг надёжных джамп-стартеров для запуска бензиновых и дизельных двигателей в мороз: тесты тока, ёмкость и безопасность.</p>
                     <div class="card-footer">
                         <span class="date">2 сентября 2026</span>
                         <span class="read-more">Читать обзор →</span>
@@ -128,8 +135,8 @@
                 <div class="card-img"><img src="images/powerbank.svg" alt="Мощный внешний аккумулятор для ноутбука и смартфона" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Электроника</span>
-                    <h2 class="card-title">Лучшие пауэрбанки высокой мощности (от 65W до 140W) для ноутбуков и смартфонов</h2>
-                    <p class="card-desc">Гид по емким внешним аккумуляторам с поддержкой Power Delivery 3.1: замеры реальной емкости и нагрева.</p>
+                    <h3 class="card-title">Лучшие пауэрбанки высокой мощности (от 65W до 140W) для ноутбуков и смартфонов</h3>
+                    <p class="card-desc">Гид по ёмким внешним аккумуляторам с поддержкой Power Delivery 3.1: замеры реальной ёмкости и нагрева.</p>
                     <div class="card-footer">
                         <span class="date">2 сентября 2026</span>
                         <span class="read-more">Читать обзор →</span>
@@ -141,7 +148,7 @@
                 <div class="card-img"><img src="images/obd2-scanner.svg" alt="Автомобильный диагностический сканер OBD2" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автотовары</span>
-                    <h2 class="card-title">Автомобильные сканеры OBD2: рейтинг лучших моделей для самостоятельной диагностики</h2>
+                    <h3 class="card-title">Автомобильные сканеры OBD2: рейтинг лучших моделей для самостоятельной диагностики</h3>
                     <p class="card-desc">Какой диагностический адаптер выбрать для быстрого чтения ошибок ДВС и сброса сервисных интервалов через смартфон.</p>
                     <div class="card-footer">
                         <span class="date">1 сентября 2026</span>
@@ -154,7 +161,7 @@
                 <div class="card-img"><img src="images/tv-box.svg" alt="ТВ-приставка Smart TV Box на Android и Google TV" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Электроника</span>
-                    <h2 class="card-title">Топ-5 лучших ТВ-приставок (Smart TV Box) 2026 года</h2>
+                    <h3 class="card-title">Топ-5 лучших ТВ-приставок (Smart TV Box) 2026 года</h3>
                     <p class="card-desc">Рейтинг проверенных медиаплееров на Android и Google TV: 4K HDR, кодек AV1, сравнение Xiaomi, Apple TV и Яндекс Модуля.</p>
                     <div class="card-footer">
                         <span class="date">Сентябрь 2026</span>
@@ -167,7 +174,7 @@
                 <div class="card-img"><img src="images/robot-vacuum.svg" alt="Робот-пылесос со станцией самоочистки" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Умный дом</span>
-                    <h2 class="card-title">Рейтинг роботов-пылесосов со станцией самоочистки: соотношение цена/качество</h2>
+                    <h3 class="card-title">Рейтинг роботов-пылесосов со станцией самоочистки: соотношение цена/качество</h3>
                     <p class="card-desc">Тест влажной уборки, преодоления порогов и работы лазерных лидаров в квартирах с домашними животными.</p>
                     <div class="card-footer">
                         <span class="date">31 августа 2026</span>
@@ -180,7 +187,7 @@
                 <div class="card-img"><img src="images/zigbee-hub.svg" alt="Хаб умного дома Zigbee и беспроводные датчики" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Умный дом</span>
-                    <h2 class="card-title">Умный дом без проводов: как работает Zigbee и какой хаб выбрать в 2026 году</h2>
+                    <h3 class="card-title">Умный дом без проводов: как работает Zigbee и какой хаб выбрать в 2026 году</h3>
                     <p class="card-desc">Инженерный разбор топологии сети, спящих датчиков, проблемы выключателей без нуля и сравнение хабов Aqara и Яндекс.</p>
                     <div class="card-footer">
                         <span class="date">Сентябрь 2026</span>
@@ -191,11 +198,11 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-col">
                 <h4>ТехноГид</h4>
-                <p>Честные обзоры гаджетов, электроники и автотоваров.</p>
+                <p>Честные обзоры гаджетов, потребительской электроники и автотоваров. Экспертные подборки с реальным опытом использования.</p>
             </div>
             <div class="footer-col">
                 <h4>Навигация</h4>
@@ -208,8 +215,8 @@
             </div>
             <div class="footer-col">
                 <h4>Информация</h4>
-                <p class="disclaimer">Сайт может содержать партнерские ссылки.</p>
-                <p class="copy">© 2026 ТехноГид.</p>
+                <p class="disclaimer">Сайт может содержать партнёрские ссылки. При переходе мы можем получать вознаграждение без дополнительных расходов для покупателя.</p>
+                <p class="copy">© 2026 ТехноГид. Все права защищены.</p>
             </div>
         </div>
     </footer>
