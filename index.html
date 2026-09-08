@@ -51,9 +51,18 @@
             <p>Сравнения, тесты и практические гайды: от портативных консолей и домашних сетей до автогаджетов и умного дома.</p>
         </section>
 
+        <nav class="topic-filters" aria-label="Фильтр материалов по рубрикам">
+            <button type="button" class="topic-chip" data-filter="all" aria-pressed="true">Все</button>
+            <button type="button" class="topic-chip" data-filter="hardware" aria-pressed="false">⚡️ Железо</button>
+            <button type="button" class="topic-chip" data-filter="games" aria-pressed="false">🎮 Игры</button>
+            <button type="button" class="topic-chip" data-filter="lifehacks" aria-pressed="false">🛠 Лайфхаки</button>
+            <button type="button" class="topic-chip" data-filter="offtop" aria-pressed="false">🍿 Кино и Оффтоп</button>
+        </nav>
+
         <section id="featured">
-            <a class="hero-card" href="articles/steam-deck-oled-vs-switch-oled.html">
+            <a class="hero-card" href="articles/steam-deck-oled-vs-switch-oled.html" data-category="games">
                 <div class="hero-card__media">
+                    <span class="topic-badge">🎮 Игры</span>
                     <img src="images/handhelds-battle.svg" alt="Steam Deck OLED, Nintendo Switch 2 и Nintendo Switch OLED" width="640" height="400">
                 </div>
                 <div class="hero-card__body">
@@ -74,8 +83,8 @@
             </div>
 
             <div class="featured-grid">
-                <a class="card" href="articles/vless-amnezia-router-setup.html">
-                    <div class="card-img"><img src="images/vpn-router.svg" alt="Домашний роутер с VPN и раздельным туннелированием" loading="lazy" width="640" height="400"></div>
+                <a class="card" href="articles/vless-amnezia-router-setup.html" data-category="lifehacks">
+                    <div class="card-img"><span class="topic-badge">🛠 Лайфхаки</span><img src="images/vpn-router.svg" alt="Домашний роутер с VPN и раздельным туннелированием" loading="lazy" width="640" height="400"></div>
                     <div class="card-body">
                         <span class="card-tag">Сети и безопасность</span>
                         <h3 class="card-title">Домашний VPN и антиблокировка на роутере: VLESS, Amnezia и раздельное туннелирование</h3>
@@ -87,8 +96,8 @@
                     </div>
                 </a>
 
-                <a class="card" href="articles/type-c-dock-station-workstation-setup.html">
-                    <div class="card-img"><img src="images/typec-dock.svg" alt="Подключение ноутбука через одну Type-C док-станцию" loading="lazy" width="640" height="400"></div>
+                <a class="card" href="articles/type-c-dock-station-workstation-setup.html" data-category="hardware">
+                    <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/typec-dock.svg" alt="Подключение ноутбука через одну Type-C док-станцию" loading="lazy" width="640" height="400"></div>
                     <div class="card-body">
                         <span class="card-tag">Рабочее место</span>
                         <h3 class="card-title">Идеальный сетап на одном кабеле: как подключить ноутбук через Type-C док-станцию</h3>
@@ -100,8 +109,8 @@
                     </div>
                 </a>
 
-                <a class="card" href="articles/local-game-streaming-guide.html">
-                    <div class="card-img"><img src="images/game-streaming-setup.svg" alt="Смартфон с геймпадом, локальный стриминг с ПК и PS5, кулер и питание" loading="lazy" width="640" height="400"></div>
+                <a class="card" href="articles/local-game-streaming-guide.html" data-category="games">
+                    <div class="card-img"><span class="topic-badge">🎮 Игры</span><img src="images/game-streaming-setup.svg" alt="Смартфон с геймпадом, локальный стриминг с ПК и PS5, кулер и питание" loading="lazy" width="640" height="400"></div>
                     <div class="card-body">
                         <span class="card-tag">Гаджеты и консоли</span>
                         <h3 class="card-title">Смартфон как ультимативная консоль в 2026: локальный стриминг с ПК/PS5, Winlator и ретрогейминг</h3>
@@ -121,8 +130,8 @@
         </div>
 
         <section class="grid">
-            <a class="card" href="articles/best-smartphones-under-30000.html">
-                <div class="card-img"><img src="images/smartphones-under-30k.svg" alt="Топ-5 смартфонов до 30 000 рублей" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/best-smartphones-under-30000.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/smartphones-under-30k.svg" alt="Топ-5 смартфонов до 30 000 рублей" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Электроника</span>
                     <h3 class="card-title">Топ-5 лучших смартфонов до 30 000 рублей в 2026 году: гид покупателя без компромиссов</h3>
@@ -134,8 +143,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/top-dashcams-2026.html">
-                <div class="card-img"><img src="images/dashcam.svg" alt="Автомобильный видеорегистратор с радар-детектором" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/top-dashcams-2026.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/dashcam.svg" alt="Автомобильный видеорегистратор с радар-детектором" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автотовары</span>
                     <h3 class="card-title">Топ-7 видеорегистраторов 2026 года с радар-детектором и ночной съёмкой 4K</h3>
@@ -147,8 +156,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/top-jump-starters-2026.html">
-                <div class="card-img"><img src="images/jump-starter.svg" alt="Пусковое устройство (бустер) для запуска двигателя" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/top-jump-starters-2026.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/jump-starter.svg" alt="Пусковое устройство (бустер) для запуска двигателя" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автогаджеты</span>
                     <h3 class="card-title">Топ-5 лучших пусковых устройств (бустеров) 2026 года</h3>
@@ -160,8 +169,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/top-powerbanks-2026.html">
-                <div class="card-img"><img src="images/powerbank.svg" alt="Мощный внешний аккумулятор для ноутбука и смартфона" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/top-powerbanks-2026.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/powerbank.svg" alt="Мощный внешний аккумулятор для ноутбука и смартфона" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Электроника</span>
                     <h3 class="card-title">Лучшие пауэрбанки высокой мощности (от 65W до 140W) для ноутбуков и смартфонов</h3>
@@ -173,8 +182,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/best-obd2-scanners.html">
-                <div class="card-img"><img src="images/obd2-scanner.svg" alt="Автомобильный диагностический сканер OBD2" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/best-obd2-scanners.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/obd2-scanner.svg" alt="Автомобильный диагностический сканер OBD2" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Автотовары</span>
                     <h3 class="card-title">Автомобильные сканеры OBD2: рейтинг лучших моделей для самостоятельной диагностики</h3>
@@ -186,8 +195,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/top-tv-boxes-2026.html">
-                <div class="card-img"><img src="images/tv-box.svg" alt="ТВ-приставка Smart TV Box на Android и Google TV" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/top-tv-boxes-2026.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/tv-box.svg" alt="ТВ-приставка Smart TV Box на Android и Google TV" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Электроника</span>
                     <h3 class="card-title">Топ-5 лучших ТВ-приставок (Smart TV Box) 2026 года</h3>
@@ -199,8 +208,8 @@
                 </div>
             </a>
 
-            <a class="card" href="articles/robot-vacuums-2026.html">
-                <div class="card-img"><img src="images/robot-vacuum.svg" alt="Робот-пылесос со станцией самоочистки" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="articles/robot-vacuums-2026.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/robot-vacuum.svg" alt="Робот-пылесос со станцией самоочистки" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Умный дом</span>
                     <h3 class="card-title">Рейтинг роботов-пылесосов со станцией самоочистки: соотношение цена/качество</h3>
@@ -212,8 +221,8 @@
                 </div>
             </a>
 
-            <a class="card" href="zigbee-starter-guide.html">
-                <div class="card-img"><img src="images/zigbee-hub.svg" alt="Хаб умного дома Zigbee и беспроводные датчики" loading="lazy" width="640" height="400"></div>
+            <a class="card" href="zigbee-starter-guide.html" data-category="hardware">
+                <div class="card-img"><span class="topic-badge">⚡️ Железо</span><img src="images/zigbee-hub.svg" alt="Хаб умного дома Zigbee и беспроводные датчики" loading="lazy" width="640" height="400"></div>
                 <div class="card-body">
                     <span class="card-tag">Умный дом</span>
                     <h3 class="card-title">Умный дом без проводов: как работает Zigbee и какой хаб выбрать в 2026 году</h3>
@@ -225,6 +234,8 @@
                 </div>
             </a>
         </section>
+
+        <p class="topic-empty" hidden>В этой рубрике пока нет материалов — скоро добавим. А пока загляните в другие разделы.</p>
     </main>
 
     <footer class="site-footer">
@@ -249,5 +260,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var bar = document.querySelector('.topic-filters');
+            if (!bar) return;
+            var chips = bar.querySelectorAll('.topic-chip');
+            var items = document.querySelectorAll('[data-category]');
+            var heads = document.querySelectorAll('.section-head');
+            var empty = document.querySelector('.topic-empty');
+
+            function apply(filter) {
+                var visible = 0;
+                items.forEach(function (el) {
+                    var show = filter === 'all' || el.getAttribute('data-category') === filter;
+                    el.hidden = !show;
+                    if (show) visible++;
+                });
+                heads.forEach(function (h) { h.hidden = filter !== 'all'; });
+                if (empty) empty.hidden = visible > 0;
+            }
+
+            chips.forEach(function (chip) {
+                chip.addEventListener('click', function () {
+                    chips.forEach(function (c) {
+                        c.setAttribute('aria-pressed', c === chip ? 'true' : 'false');
+                    });
+                    apply(chip.getAttribute('data-filter'));
+                    bar.scrollTo({
+                        left: chip.offsetLeft - bar.clientWidth / 2 + chip.clientWidth / 2,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        })();
+    </script>
 </body>
 </html>

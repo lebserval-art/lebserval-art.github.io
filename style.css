@@ -247,6 +247,7 @@ body > main:not(.container) {
 }
 
 .hero-card__media {
+    position: relative;
     background: var(--surface-2);
     min-height: 100%;
 }
@@ -310,7 +311,7 @@ body > main:not(.container) {
     border-color: var(--border-strong);
 }
 
-.card-img { background: var(--surface-2); aspect-ratio: 16 / 10; }
+.card-img { position: relative; background: var(--surface-2); aspect-ratio: 16 / 10; }
 .card-img img { width: 100%; height: 100%; object-fit: cover; }
 
 .card-body {
@@ -355,6 +356,77 @@ body > main:not(.container) {
 .read-more { color: var(--accent); font-weight: 600; font-size: 0.86rem; }
 .card:hover .read-more { text-decoration: underline; text-underline-offset: 3px; }
 .date, .read-time { font-size: 0.78rem; color: var(--text-muted); }
+
+/* ---------- Topic filters (rubricator) ---------- */
+[hidden] { display: none !important; }
+
+.topic-filters {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    margin: 4px 0 30px;
+    padding-bottom: 4px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.topic-filters::-webkit-scrollbar { display: none; }
+
+.topic-chip {
+    flex: 0 0 auto;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.topic-chip:hover { color: var(--text); border-color: var(--border-strong); }
+
+.topic-chip[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.topic-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.topic-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    color: var(--text);
+    background: var(--surface);
+    background: color-mix(in srgb, var(--surface) 85%, transparent);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--border);
+}
+
+.topic-empty {
+    margin: 8px 0 48px;
+    padding: 34px 20px;
+    text-align: center;
+    color: var(--text-muted);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+}
 
 /* ---------- Article layout ---------- */
 .content-page { flex: 1; padding: 40px 20px 56px; }
@@ -789,11 +861,15 @@ a.btn-secondary:hover { border-color: var(--accent); }
 
 .contact-box {
     margin-top: 20px;
-    padding: 20px 22px;
+    padding: 22px 24px;
     background: var(--surface-2);
     border: 1px solid var(--border);
     border-radius: var(--radius);
 }
+
+.contact-box h2 { margin-top: 0; margin-bottom: 10px; font-size: 1.2rem; }
+.contact-box .btn { margin: 16px 0 0; }
+.contact-note { margin: 10px 0 0; font-size: 0.85rem; color: var(--text-muted); }
 
 /* ---------- Affiliate widget ---------- */
 .affiliate-card {
@@ -871,6 +947,32 @@ a.btn-secondary:hover { border-color: var(--accent); }
     outline-offset: 2px;
 }
 
+/* Yandex Market variant — marketplace yellow */
+.affiliate-btn--market {
+    background-color: #ffcc00;
+    background-image: linear-gradient(135deg, #ffe14d 0%, #ffcc00 55%, #f7b500 100%);
+    color: #1a1a1a !important;
+    box-shadow: 0 8px 20px -8px rgba(247, 181, 0, 0.5);
+}
+
+.affiliate-btn--market:hover {
+    box-shadow: 0 14px 26px -10px rgba(247, 181, 0, 0.55);
+}
+
+/* Two buttons in a row, stacking on narrow screens */
+.affiliate-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.affiliate-actions .affiliate-btn {
+    flex: 1 1 220px;
+    width: auto;
+    max-width: none;
+    margin: 0;
+}
+
 .affiliate-card .affiliate-disclaimer {
     margin: 10px 0 0;
     font-size: 0.72rem;
@@ -878,6 +980,8 @@ a.btn-secondary:hover { border-color: var(--accent); }
     color: var(--text-muted);
     overflow-wrap: anywhere;
 }
+
+.affiliate-card .affiliate-disclaimer + .affiliate-disclaimer { margin-top: 4px; }
 
 .affiliate-card > p {
     margin: 0 0 14px;
@@ -988,6 +1092,8 @@ a.btn-secondary:hover { border-color: var(--accent); }
     .related-grid { grid-template-columns: 1fr; }
     .hero { padding: 44px 0 30px; }
     .header-container { justify-content: center; text-align: center; }
+    .topic-filters { gap: 8px; margin-bottom: 24px; }
+    .topic-chip { padding: 8px 14px; font-size: 0.85rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
