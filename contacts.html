@@ -97,9 +97,8 @@
     (function () {
         // Endpoint that relays the form to Telegram. The bot token lives ONLY
         // on the server side (env var TELEGRAM_BOT_TOKEN) — never in this file.
-        // Deploy api/feedback.js (see api/README.md) to Vercel / Cloudflare and,
-        // if it is not same-origin, put its absolute URL here.
-        var FEEDBACK_ENDPOINT = '/api/feedback';
+        // Served by the Vercel deployment of api/feedback.js (see api/README.md).
+        var FEEDBACK_ENDPOINT = 'https://lebserval-art-github-io.vercel.app/api/feedback';
         var TG_FALLBACK = 'https://t.me/lebserval_ai_bot';
 
         var form = document.getElementById('feedbackForm');
