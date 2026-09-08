@@ -454,6 +454,17 @@
 </script>
 
  <link rel="stylesheet" href="../style.css">
+
+ <!-- Yandex.Metrika counter -->
+ <script type="text/javascript">
+ (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+ m[i].l=1*new Date();
+ for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+ k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+ (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ ym(112303137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/112303137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </head>
 <body>
  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ic-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></symbol></svg>
@@ -1378,5 +1389,18 @@
  </div>
  </div>
  </footer>
+
+ <script>
+ // Отправка целей в Яндекс Метрику по кликам на партнёрские кнопки.
+ // Один делегированный обработчик на все виджеты статьи.
+ (function () {
+ document.addEventListener('click', function (ev) {
+ var btn = ev.target.closest && ev.target.closest('a.affiliate-btn');
+ if (!btn || typeof window.ym !== 'function') return;
+ var goal = btn.classList.contains('affiliate-btn--market') ? 'click_market' : 'click_aliexpress';
+ window.ym(112303137, 'reachGoal', goal);
+ }, true);
+ })();
+ </script>
 </body>
 </html>
