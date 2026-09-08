@@ -149,6 +149,58 @@ a { color: var(--accent); }
 
 .main-nav a:hover { color: var(--text); }
 
+/* Telegram channel link — header pill + footer link */
+:root {
+    --icon-telegram: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.78%2018.65l.28-4.23%207.68-6.92c.34-.31-.07-.46-.52-.19L7.74%2013.3%203.64%2012c-.88-.25-.89-.86.2-1.31l15.97-6.16c.73-.27%201.37.17%201.13%201.28l-2.72%2012.81c-.19.91-.74%201.13-1.5.71L12.6%2016.3l-2%201.93c-.23.23-.42.42-.82.42z'/%3E%3C/svg%3E");
+}
+
+.main-nav a.nav-tg {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 13px 6px 11px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.main-nav a.nav-tg:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.nav-tg::before,
+.footer-tg::before {
+    content: "";
+    flex: none;
+    width: 15px;
+    height: 15px;
+    background: currentColor;
+    -webkit-mask: var(--icon-telegram) center / contain no-repeat;
+    mask: var(--icon-telegram) center / contain no-repeat;
+}
+
+.footer-col a.footer-tg {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.footer-col a.footer-tg:hover { color: var(--accent); }
+
 /* Fallback header for legacy article pages without .site-header */
 body > header:not(.site-header) {
     width: 100%;
