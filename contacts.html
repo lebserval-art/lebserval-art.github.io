@@ -35,9 +35,37 @@
 
         <div class="contact-box">
             <h2>Связь с редакцией «ТехноГид»</h2>
-            <p>По вопросам сотрудничества, рекламы, предложений по обзорам и замечаниям к публикациям пишите в нашу официальную Telegram-приёмную:</p>
-            <p><a class="btn btn-primary" href="https://t.me/lebserval_ai_bot" target="_blank" rel="noopener">💬 Написать в Telegram-приёмную</a></p>
-            <p class="contact-note">Обращения обрабатываются дежурным редактором ежедневно с 09:00 до 18:00 (МСК).</p>
+            <p>По вопросам сотрудничества, рекламы, предложений по обзорам и замечаниям к публикациям заполните форму — мы ответим вам в Telegram или по электронной почте.</p>
+
+            <form class="feedback-form" id="feedbackForm">
+                <div class="field">
+                    <label for="fb-name">Ваше имя</label>
+                    <input type="text" id="fb-name" name="name" required autocomplete="name" maxlength="80">
+                </div>
+                <div class="field">
+                    <label for="fb-contact">Контакт для связи</label>
+                    <input type="text" id="fb-contact" name="contact" required placeholder="@username или name@example.com" autocomplete="off" maxlength="120">
+                    <span class="field-hint">Telegram-ник или email. Телефон указывать не нужно.</span>
+                </div>
+                <div class="field">
+                    <label for="fb-topic">Тема обращения</label>
+                    <select id="fb-topic" name="topic">
+                        <option>Сотрудничество и реклама</option>
+                        <option>Вопрос по статье</option>
+                        <option>Замечание</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="fb-message">Сообщение</label>
+                    <textarea id="fb-message" name="message" required rows="5" maxlength="4000"></textarea>
+                </div>
+                <input type="text" class="fb-hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <button type="submit" class="btn btn-primary feedback-submit">Отправить сообщение</button>
+                <p class="feedback-status" role="status" aria-live="polite" hidden></p>
+            </form>
+
+            <p class="contact-note">Или напишите напрямую в Telegram-приёмную: <a href="https://t.me/lebserval_ai_bot" target="_blank" rel="noopener">@lebserval_ai_bot</a>. Обращения обрабатываются ежедневно с 09:00 до 18:00 (МСК).</p>
         </div>
     </article>
 
@@ -64,5 +92,78 @@
         </div>
     </div>
 </footer>
+
+<script>
+    (function () {
+        // Endpoint that relays the form to Telegram. The bot token lives ONLY
+        // on the server side (env var TELEGRAM_BOT_TOKEN) — never in this file.
+        // Deploy api/feedback.js (see api/README.md) to Vercel / Cloudflare and,
+        // if it is not same-origin, put its absolute URL here.
+        var FEEDBACK_ENDPOINT = '/api/feedback';
+        var TG_FALLBACK = 'https://t.me/lebserval_ai_bot';
+
+        var form = document.getElementById('feedbackForm');
+        if (!form) return;
+        var statusEl = form.querySelector('.feedback-status');
+        var submitEl = form.querySelector('.feedback-submit');
+
+        function setStatus(kind, html) {
+            statusEl.className = 'feedback-status is-' + kind;
+            statusEl.innerHTML = html;
+            statusEl.hidden = false;
+        }
+
+        form.addEventListener('input', function () {
+            if (!statusEl.hidden && !statusEl.classList.contains('is-loading')) {
+                statusEl.hidden = true;
+            }
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (form.querySelector('.fb-hp').value) { return; } // honeypot
+
+            var data = {
+                name: document.getElementById('fb-name').value.trim(),
+                contact: document.getElementById('fb-contact').value.trim(),
+                topic: document.getElementById('fb-topic').value,
+                message: document.getElementById('fb-message').value.trim()
+            };
+
+            if (!data.name || !data.contact || !data.message) {
+                setStatus('error', '❌ Заполните имя, контакт и текст сообщения.');
+                return;
+            }
+
+            submitEl.disabled = true;
+            setStatus('loading', 'Отправка…');
+
+            fetch(FEEDBACK_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(function (r) {
+                    return r.json().catch(function () { return {}; }).then(function (j) {
+                        return { ok: r.ok, body: j };
+                    });
+                })
+                .then(function (res) {
+                    if (!res.ok || !res.body.success) {
+                        throw new Error((res.body && res.body.error) || 'send failed');
+                    }
+                    form.reset();
+                    setStatus('success', '✅ Ваше сообщение успешно отправлено редакции! Мы ответим вам в Telegram или по почте.');
+                })
+                .catch(function () {
+                    setStatus('error', '❌ Ошибка отправки, попробуйте позже или напишите нам напрямую в <a href="' + TG_FALLBACK + '" target="_blank" rel="noopener">Telegram</a>.');
+                })
+                .finally(function () {
+                    submitEl.disabled = false;
+                });
+        });
+    })();
+</script>
 </body>
 </html>
