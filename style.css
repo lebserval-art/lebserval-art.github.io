@@ -506,6 +506,50 @@ body > main:not(.container) {
 .article-content h3,
 .article-body h3 { font-size: 1.15rem; font-weight: 700; margin: 26px 0 10px; }
 
+.article-content h4 { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; margin: 22px 0 8px; }
+
+/* Back-to-list control */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: var(--measure);
+    margin: 0 auto 22px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+.back-link:hover { color: var(--text); border-color: var(--border-strong); }
+
+.article-note {
+    margin: 22px 0 0;
+    padding: 12px 14px;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+/* Two per-generation buy widgets side by side, stacking on mobile */
+.affiliate-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+.affiliate-pair .affiliate-card { margin: 0; }
+@media (max-width: 640px) {
+    .affiliate-pair { grid-template-columns: 1fr; }
+}
+
 .article-content p,
 .article-body p,
 .article-intro p,
@@ -641,6 +685,8 @@ p.lead,
 }
 
 .verdict-box h3:not(:first-child) { margin-top: 18px; }
+.verdict-box h4 { font-size: 1.02rem; font-weight: 700; margin: 0 0 6px; }
+.verdict-box h4:not(:first-child) { margin-top: 16px; }
 .verdict-box p { margin: 0; color: var(--text-soft); }
 .verdict-box hr { border: none; border-top: 1px solid var(--accent-border); margin: 16px 0; }
 

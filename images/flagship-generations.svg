@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Битва поколений смартфонов: новый флагман против прошлогоднего со скидкой">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/><stop offset="1" stop-color="#dbe4fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+
+  <!-- new flagship (left), slightly larger, "glow" -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="96" y="70" width="150" height="270" rx="26" fill="#ffffff"/>
+    <rect x="116" y="92" width="110" height="200" rx="10" fill="#0f172a" stroke="none"/>
+    <rect x="128" y="104" width="46" height="46" rx="12" fill="#2b2b33"/>
+    <circle cx="143" cy="126" r="9" fill="#38bdf8"/>
+    <circle cx="163" cy="126" r="9" fill="#334155"/>
+  </g>
+  <g fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" opacity="0.55">
+    <path d="M262 110 q22 60 0 190"/>
+    <path d="M284 92 q40 108 0 226"/>
+  </g>
+  <text x="171" y="322" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#2563eb">2026 · новинка</text>
+
+  <!-- last-gen flagship (right) with discount tag -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="372" y="96" width="132" height="234" rx="24" fill="#ffffff"/>
+    <rect x="390" y="116" width="96" height="176" rx="9" fill="#0f172a" stroke="none"/>
+    <circle cx="438" cy="150" r="20" fill="#2b2b33"/>
+    <circle cx="431" cy="145" r="7" fill="#334155"/>
+    <circle cx="446" cy="156" r="6" fill="#334155"/>
+  </g>
+  <g>
+    <path d="M470 76 l64 0 34 34 -58 58 -34 -34 z" fill="#facc15" stroke="#1e293b" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="489" cy="95" r="8" fill="#0f172a"/>
+    <text x="512" y="116" text-anchor="middle" transform="rotate(45 512 108)" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="#0f172a">−30%</text>
+  </g>
+  <text x="438" y="316" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#334155">2025 · со скидкой</text>
+
+  <text x="320" y="210" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="800" fill="#1e293b">VS</text>
+</svg>
