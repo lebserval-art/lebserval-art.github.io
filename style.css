@@ -1030,6 +1030,8 @@ a.btn-secondary:hover { border-color: var(--accent); }
 
 /* ---------- Affiliate widget ---------- */
 .affiliate-card {
+    display: flex;
+    flex-direction: column;
     margin: 28px 0;
     padding: 20px 22px;
     background: var(--surface-2);
@@ -1037,12 +1039,33 @@ a.btn-secondary:hover { border-color: var(--accent); }
     border-radius: 12px;
 }
 
+/* Push buttons + markings to the bottom so they line up across a pair
+   regardless of badge / model-name length */
+.affiliate-card .affiliate-actions { margin-top: auto; }
+
 .affiliate-header {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     align-items: center;
     gap: 8px 12px;
     margin-bottom: 14px;
+}
+
+/* Device image slot — rendered at the very top of each widget card
+   (order:-1 so the thumbs always line up regardless of badge height;
+   scoped to beat the generic .article-content img rule) */
+.affiliate-card .device-thumb {
+    order: -1;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 0 0 14px;
+    padding: 8px;
+    object-fit: contain;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
 }
 
 .affiliate-badge {
