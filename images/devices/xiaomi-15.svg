@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Xiaomi 15 — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="125" y="55" width="150" height="300" rx="30" fill="#2f3a33"/>
+<circle cx="200" cy="118" r="52" fill="#2f3a33" stroke="#000" stroke-opacity="0.15" stroke-width="2"/><circle cx="200" cy="96" r="15" fill="#0c0c10"/><circle cx="200" cy="96" r="8.2" fill="#3a3a42"/><circle cx="195.8" cy="91.8" r="2.7" fill="#71727a"/><circle cx="178" cy="138" r="12" fill="#0c0c10"/><circle cx="178" cy="138" r="6.6" fill="#3a3a42"/><circle cx="174.6" cy="134.6" r="2.2" fill="#71727a"/><circle cx="222" cy="138" r="12" fill="#0c0c10"/><circle cx="222" cy="138" r="6.6" fill="#3a3a42"/><circle cx="218.6" cy="134.6" r="2.2" fill="#71727a"/><rect x="195" y="114" width="10" height="8" rx="3" fill="#fcd9a8"/>
+<text x="200" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" fill="#e8eaee">Xiaomi</text>
+<text x="200" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#e8eaee" opacity="0.75">15</text>
+</svg>

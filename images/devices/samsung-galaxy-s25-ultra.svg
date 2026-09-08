@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Galaxy S25 Ultra — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="125" y="55" width="150" height="300" rx="30" fill="#23262f"/>
+<circle cx="158" cy="92" r="13" fill="#0c0c10"/><circle cx="158" cy="92" r="7.2" fill="#3a3a42"/><circle cx="154.4" cy="88.4" r="2.3" fill="#71727a"/><circle cx="158" cy="128" r="13" fill="#0c0c10"/><circle cx="158" cy="128" r="7.2" fill="#3a3a42"/><circle cx="154.4" cy="124.4" r="2.3" fill="#71727a"/><circle cx="158" cy="164" r="13" fill="#0c0c10"/><circle cx="158" cy="164" r="7.2" fill="#3a3a42"/><circle cx="154.4" cy="160.4" r="2.3" fill="#71727a"/><circle cx="158" cy="200" r="13" fill="#0c0c10"/><circle cx="158" cy="200" r="7.2" fill="#3a3a42"/><circle cx="154.4" cy="196.4" r="2.3" fill="#71727a"/><rect x="191" y="88" width="10" height="8" rx="3" fill="#fcd9a8"/><rect x="150" y="300" width="80" height="10" rx="5" fill="#000" fill-opacity="0.18"/>
+<text x="200" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" fill="#e8eaee">Galaxy</text>
+<text x="200" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#e8eaee" opacity="0.75">S25 Ultra</text>
+</svg>

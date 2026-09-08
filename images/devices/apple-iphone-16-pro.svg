@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="iPhone 16 Pro — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="125" y="55" width="150" height="300" rx="30" fill="#cbc7bf"/>
+<rect x="138" y="72" width="96" height="96" rx="24" fill="#cbc7bf"/><circle cx="162" cy="96" r="15" fill="#0c0c10"/><circle cx="162" cy="96" r="8.2" fill="#3a3a42"/><circle cx="157.8" cy="91.8" r="2.7" fill="#71727a"/><circle cx="210" cy="96" r="15" fill="#0c0c10"/><circle cx="210" cy="96" r="8.2" fill="#3a3a42"/><circle cx="205.8" cy="91.8" r="2.7" fill="#71727a"/><circle cx="162" cy="144" r="15" fill="#0c0c10"/><circle cx="162" cy="144" r="8.2" fill="#3a3a42"/><circle cx="157.8" cy="139.8" r="2.7" fill="#71727a"/><rect x="207" y="140" width="10" height="8" rx="3" fill="#fcd9a8"/>
+<text x="200" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" fill="#3a3a42">iPhone</text>
+<text x="200" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#3a3a42" opacity="0.75">16 Pro</text>
+</svg>

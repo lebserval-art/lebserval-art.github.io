@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="realme GT 8 Pro — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="125" y="55" width="150" height="300" rx="30" fill="#17171a"/>
+<rect x="150" y="76" width="52" height="120" rx="26" fill="#17171a"/><circle cx="176" cy="102" r="15" fill="#0c0c10"/><circle cx="176" cy="102" r="8.2" fill="#3a3a42"/><circle cx="171.8" cy="97.8" r="2.7" fill="#71727a"/><circle cx="176" cy="138" r="15" fill="#0c0c10"/><circle cx="176" cy="138" r="8.2" fill="#3a3a42"/><circle cx="171.8" cy="133.8" r="2.7" fill="#71727a"/><circle cx="176" cy="174" r="11" fill="#0c0c10"/><circle cx="176" cy="174" r="6.1" fill="#3a3a42"/><circle cx="172.9" cy="170.9" r="2.0" fill="#71727a"/><rect x="209" y="80" width="10" height="8" rx="3" fill="#fcd9a8"/>
+<text x="200" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" fill="#e8eaee">realme</text>
+<text x="200" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#e8eaee" opacity="0.75">GT 8 Pro</text>
+</svg>
