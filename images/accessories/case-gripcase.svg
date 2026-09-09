@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Чехол-гриппкейс с накладными рукоятками для Steam Deck — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g>
+  <path d="M62 138 h276 a26 26 0 0 1 26 26 v72 a26 26 0 0 1 -26 26 h-16 l-14 42 a20 20 0 0 1 -19 14 h-30 a20 20 0 0 1 -19 -14 l-8 -24 h-64 l-8 24 a20 20 0 0 1 -19 14 h-30 a20 20 0 0 1 -19 -14 l-14 -42 h-16 a26 26 0 0 1 -26 -26 v-72 a26 26 0 0 1 26 -26 z" fill="#2c323c"/>
+  <path d="M62 138 h60 v164 h-16 l-14 42 a20 20 0 0 1 -19 14 h-30 a20 20 0 0 1 -19 -14 l-14 -42 h-16 a26 26 0 0 1 -26 -26 v-72 a26 26 0 0 1 26 -26 z" fill="#3b424e" transform="translate(0 0)"/>
+  <rect x="86" y="154" width="228" height="112" rx="18" fill="#1b1f26"/>
+  <rect x="142" y="166" width="116" height="88" rx="7" fill="#0d1b2a"/>
+  <rect x="148" y="172" width="104" height="76" rx="4" fill="#16324a"/>
+  <circle cx="114" cy="188" r="12" fill="#151920"/><circle cx="114" cy="188" r="5.5" fill="#4a4a54"/>
+  <circle cx="286" cy="188" r="12" fill="#151920"/><circle cx="286" cy="188" r="5.5" fill="#4a4a54"/>
+  <g fill="#4c5563">
+    <rect x="70" y="286" width="52" height="58" rx="24"/>
+    <rect x="278" y="286" width="52" height="58" rx="24"/>
+  </g>
+</g>
+<text x="200" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#6b6b76">чехол с рукоятками</text>
+</svg>

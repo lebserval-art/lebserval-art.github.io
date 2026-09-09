@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Чехол с фронтальной крышкой для Steam Deck — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g>
+  <rect x="56" y="130" width="288" height="152" rx="30" fill="#3a4250"/>
+  <rect x="56" y="130" width="78" height="152" rx="30" fill="#48515f"/>
+  <rect x="266" y="130" width="78" height="152" rx="30" fill="#48515f"/>
+  <rect x="74" y="146" width="252" height="120" rx="20" fill="#22262e"/>
+  <rect x="138" y="158" width="124" height="96" rx="7" fill="#0d1b2a"/>
+  <rect x="144" y="164" width="112" height="84" rx="4" fill="#16324a"/>
+  <circle cx="104" cy="182" r="12" fill="#1d1d22"/><circle cx="104" cy="182" r="5.5" fill="#4a4a54"/>
+  <circle cx="296" cy="182" r="12" fill="#1d1d22"/><circle cx="296" cy="182" r="5.5" fill="#4a4a54"/>
+  <circle cx="286" cy="228" r="6.5" fill="#1d1d22"/><circle cx="306" cy="228" r="6.5" fill="#1d1d22"/>
+  <circle cx="296" cy="218" r="6.5" fill="#1d1d22"/><circle cx="296" cy="238" r="6.5" fill="#1d1d22"/>
+</g>
+<g>
+  <path d="M126 152 h190 a16 16 0 0 1 16 16 v98 a16 16 0 0 1 -16 16 h-190 z" fill="#5b6675" opacity="0.96" transform="rotate(-14 126 152)"/>
+  <path d="M126 152 h190 a16 16 0 0 1 16 16 v98 a16 16 0 0 1 -16 16 h-190 z" fill="url(#lidg)" opacity="0.35" transform="rotate(-14 126 152)"/>
+  <path d="M126 152 v130" stroke="#2f3743" stroke-width="5" stroke-linecap="round"/>
+</g>
+<defs><linearGradient id="lidg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#1c222b"/></linearGradient></defs>
+<text x="200" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#6b6b76">чехол + фронтальная крышка</text>
+</svg>

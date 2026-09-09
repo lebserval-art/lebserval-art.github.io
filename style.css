@@ -510,6 +510,8 @@ body > main:not(.container) {
     line-height: 1.14;
     letter-spacing: -0.03em;
     margin: 14px 0 16px;
+    /* Длинные слова в заголовке не должны распирать страницу на узких экранах */
+    overflow-wrap: break-word;
 }
 
 .category-tag,
@@ -1220,6 +1222,37 @@ a.btn-secondary:hover { border-color: var(--accent); }
     font-size: 0.92rem;
     color: var(--text-soft);
 }
+
+/* Короткий список характеристик внутри товарного виджета */
+.affiliate-card > ul {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.affiliate-card > ul > li {
+    position: relative;
+    padding-left: 18px;
+    margin: 0 0 8px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--text-soft);
+}
+
+.affiliate-card > ul > li:last-child { margin-bottom: 0; }
+
+.affiliate-card > ul > li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.affiliate-card > ul > li strong { color: var(--text); }
 
 /* ---------- Related posts ---------- */
 .related-posts {
