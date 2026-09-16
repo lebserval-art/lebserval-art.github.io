@@ -917,6 +917,93 @@ p.lead,
     color: var(--text-muted);
 }
 
+/* ---------- Podcast / audio banner ---------- */
+.podcast-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: var(--measure);
+    margin: 28px auto;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--surface-2) 100%);
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.podcast-banner__icon {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--accent-border);
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.podcast-banner__body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.podcast-banner__label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--accent);
+    margin-bottom: 4px;
+}
+
+.podcast-banner__text {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    color: var(--text-soft) !important;
+}
+
+.podcast-banner__link {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.88rem;
+    white-space: nowrap;
+    text-decoration: none !important;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.podcast-banner__link:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .podcast-banner {
+        flex-wrap: wrap;
+    }
+    .podcast-banner__body { flex-basis: 100%; }
+    .podcast-banner__link {
+        flex: 1 1 auto;
+        justify-content: center;
+        margin-left: 62px;
+    }
+}
+
+@media (max-width: 480px) {
+    .podcast-banner__link { margin-left: 0; }
+}
+
 /* ---------- Buttons ---------- */
 .btn,
 .cta-btn,
