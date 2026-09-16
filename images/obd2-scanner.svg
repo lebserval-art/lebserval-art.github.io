@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Автомобильный диагностический сканер OBD2">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- dongle body -->
+    <rect x="150" y="150" width="150" height="110" rx="16" fill="#ffffff"/>
+    <!-- OBD connector -->
+    <path d="M300 168 h40 v74 h-40z" fill="#e2e8f0"/>
+    <path d="M340 176 h26 v58 h-26z" fill="#cbd5e1"/>
+    <!-- pins -->
+    <g stroke="#94a3b8" stroke-width="4">
+      <path d="M348 188 h12 M348 200 h12 M348 212 h12 M348 224 h12"/>
+    </g>
+    <!-- status LED -->
+    <circle cx="180" cy="180" r="7" fill="#22c55e" stroke-width="4"/>
+  </g>
+  <!-- bluetooth waves -->
+  <g fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <path d="M120 205 q-22 0 -22 -22 M120 205 q-40 0 -40 -40 M120 205 q-58 0 -58 -58" transform="translate(30,0)"/>
+  </g>
+  <!-- phone with codes -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="400" y="120" width="120" height="200" rx="18" fill="#ffffff"/>
+    <rect x="420" y="146" width="80" height="120" rx="6" fill="#0f172a" stroke="none"/>
+  </g>
+  <g fill="#38bdf8" font-family="monospace" font-size="17" font-weight="700">
+    <text x="432" y="172">P0171</text>
+    <text x="432" y="198">P0300</text>
+    <text x="432" y="224">B1318</text>
+  </g>
+  <circle cx="460" cy="292" r="10" fill="none" stroke="#94a3b8" stroke-width="5"/>
+</svg>

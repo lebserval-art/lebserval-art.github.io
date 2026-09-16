@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pixel 9 — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="125" y="55" width="150" height="300" rx="30" fill="#dfe6ea"/>
+<rect x="125" y="96" width="150" height="48" fill="#dfe6ea"/><rect x="150" y="104" width="100" height="32" rx="16" fill="#111114"/><circle cx="172" cy="120" r="12" fill="#0c0c10"/><circle cx="172" cy="120" r="6.6" fill="#2f3036"/><circle cx="168.6" cy="116.6" r="2.2" fill="#71727a"/><circle cx="208" cy="120" r="12" fill="#0c0c10"/><circle cx="208" cy="120" r="6.6" fill="#2f3036"/><circle cx="204.6" cy="116.6" r="2.2" fill="#71727a"/><rect x="231" y="116" width="10" height="8" rx="3" fill="#fcd9a8"/>
+<text x="200" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" fill="#3a3a42">Pixel</text>
+<text x="200" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#3a3a42" opacity="0.75">9</text>
+</svg>

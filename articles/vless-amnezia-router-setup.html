@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <!-- Favicons -->
+ <link rel="icon" href="/favicon.ico" sizes="32x32">
+ <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+ <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+ <link rel="manifest" href="/site.webmanifest">
+ <meta name="theme-color" content="#0f172a">
+ <meta name="google-site-verification" content="WpNP5m35NLj4sI8E0sESvNnpVP9FqzbMQD6IqCOyfOo" />
+ <meta name="robots" content="index, follow, max-image-preview:large" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Домашний VPN и антиблокировка на роутере в 2026: VLESS, Amnezia и раздельное туннелирование — ТехноГид</title>
+ <meta name="description" content="Полный гайд по настройке домашнего VPN в 2026 году: протоколы VLESS Reality и Amnezia, раздельное туннелирование (Split Tunneling) на роутере, сохранение скорости банков и Госуслуг.">
+ <link rel="canonical" href="https://techno-gid.ru/articles/vless-amnezia-router-setup.html">
+
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="ТехноГид">
+ <meta property="og:locale" content="ru_RU">
+ <meta property="og:url" content="https://techno-gid.ru/articles/vless-amnezia-router-setup.html">
+ <meta property="og:title" content="Домашний VPN на роутере в 2026: VLESS, Amnezia и раздельное туннелирование">
+ <meta property="og:description" content="Почему классические протоколы больше не работают, какое железо тянет шифрование и как оставить банки и Госуслуги на прямом канале.">
+ <meta property="og:image" content="https://techno-gid.ru/images/vpn-router.svg">
+ <meta property="article:published_time" content="2026-09-07">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Домашний VPN на роутере: VLESS, Amnezia и раздельное туннелирование">
+ <meta name="twitter:description" content="Маскировка трафика, выбор роутера и Split Tunneling — чтобы банки и Госуслуги работали напрямую.">
+ <meta name="twitter:image" content="https://techno-gid.ru/images/vpn-router.svg">
+
+ <link rel="stylesheet" href="../style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(112303137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/112303137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+ <header class="site-header">
+ <div class="container header-container">
+ <a href="../index.html" class="logo">Техно<span>Гид</span></a>
+ <nav class="main-nav">
+ <a href="../index.html">Главная</a>
+ <a href="../about.html">О проекте</a>
+ <a href="../contacts.html">Контакты</a>
+ <a class="nav-tg" href="https://t.me/technogid_ru" target="_blank" rel="noopener" aria-label="Телеграм-канал ТехноГид">Telegram</a>
+ </nav>
+ </div>
+ </header>
+
+ <main class="container article-page">
+ <div class="breadcrumbs">
+ <a href="../index.html">Главная</a> <span>/</span> <span>Сети и безопасность</span>
+ </div>
+
+ <article class="full-article">
+ <header class="article-header">
+ <span class="category-tag">Сети и безопасность</span>
+ <h1>Домашний VPN и антиблокировка на роутере в 2026: VLESS, Amnezia и раздельное туннелирование</h1>
+ <div class="article-meta">
+ <span class="date">7 сентября 2026</span>
+ <span class="read-time">11 мин чтения</span>
+ </div>
+ </header>
+
+ <div class="article-content">
+ <p class="lead">Эпоха, когда для свободного интернета дома достаточно было включить старый добрый OpenVPN или поднять WireGuard на недорогом VPS, окончательно ушла в прошлое. Глубокий анализ пакетов (DPI) и фильтрация протоколов на уровне ТСПУ научились отсекать стандартные туннели за секунды. В 2026 году золотым стандартом стабильного домашнего интернета стали протоколы маскировки трафика — <strong>VLESS Reality</strong> и экосистема <strong>Amnezia VPN</strong> с раздельным туннелированием.</p>
+
+ <h2>1. Почему классические протоколы больше не работают?</h2>
+ <p>Главная уязвимость классических решений (WireGuard, OpenVPN, IPsec) — их предсказуемая сигнатура трафика:</p>
+ <ul>
+ <li><strong>Узнаваемые рукопожатия (Handshake):</strong> Системы фильтрации ТСПУ выявляют паттерны начала сессии WireGuard мгновенно и дропают пакеты даже без расшифровки содержимого.</li>
+ <li><strong>VLESS с маскировкой XTLS Reality:</strong> Пакеты VLESS имитируют стандартную сессию браузера к популярному белому сайту (например, Microsoft, Apple, Cloudflare). Со стороны провайдера ваш трафик неотличим от обычного защищенного HTTPS-соединения с зарубежным сервером.</li>
+ <li><strong>AmneziaWG (AWG):</strong> Модификация WireGuard со случайным добавлением мусорных байтов (Junk Packet) в заголовки, что сбивает с толку большинство сигнатурных анализаторов DPI.</li>
+ </ul>
+
+ <h2>2. Главная боль пользователя: почему нельзя пускать весь трафик через VPN</h2>
+ <p>Если настроить туннель на роутере «в лоб» для всего домашнего трафика, комфортная жизнь заканчивается:</p>
+ <div class="compare-table-wrapper">
+ <table class="specs-table">
+ <thead>
+ <tr>
+ <th>Сервис / Ресурс</th>
+ <th>При общем VPN на роутере</th>
+ <th>При правильном раздельном туннелировании</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Банки (Сбер, Т-Банк и др.)</strong></td>
+ <td>Блоковки сессий, капчи, тревожные звонки безопасности</td>
+ <td>Прямое соединение (без VPN), высокая скорость и стабильность</td>
+ </tr>
+ <tr>
+ <td><strong>Госуслуги и налоговая</strong></td>
+ <td>Ошибки авторизации и долгая загрузка из-за зарубежных IP</td>
+ <td>Прямое соединение через провайдера РФ</td>
+ </tr>
+ <tr>
+ <td><strong>Кинопоиск, Иви, Wink</strong></td>
+ <td>«Сервис недоступен в вашем регионе», тормоза в 4K</td>
+ <td>Работа в обход VPN на максимальной скорости ISP</td>
+ </tr>
+ <tr>
+ <td><strong>YouTube, Discord, соцсети</strong></td>
+ <td>Идеальный обход блокировок на всех устройствах в доме</td>
+ <td>Мгновенное перенаправление через VLESS / Amnezia</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h2>3. Выбор железа для роутера: что тянет современные протоколы шифрования?</h2>
+ <p>Криптография VLESS (XTLS-Reality) и AmneziaWG требует от роутера определенной вычислительной мощности. На слабых процессорах (старые одноядерные MIPS или бюджетные SoC) процессор будет упираться в 100% при скачивании файлов на скорости выше 30-50 Мбит/с:</p>
+ <ul>
+ <li><strong>Бюджетный сегмент (до 4-5 тыс. руб.):</strong> Роутеры на чипах MediaTek MT7621 (например, Xiaomi Mi Router 4A Gigabit) уже с трудом справляются с тяжелым шифрованием на скоростях от 100 Мбит/с. Их предел — легкий VPN на несколько клиентов.</li>
+ <li><strong>Оптимальный выбор (Wi-Fi 6 / Wi-Fi 7 на ARM):</strong> Устройства на четырехъядерных процессорах ARM (например, модели от Keenetic с поддержкой opkg/entware, роутеры на железе Banana Pi / FriendlyElec под управлением OpenWrt) с легкостью прокачивают 300–800 Мбит/с через VLESS-клиент (Xray/Sing-box).</li>
+ </ul>
+
+ <h2>4. Настройка раздельного туннелирования (Split Tunneling) на роутере</h2>
+ <p>Чтобы не делить домашнюю сеть на компромиссы, используется разделение трафика по спискам маршрутизации (Domain Strategy / IP Lists):</p>
+ <ul>
+ <li><strong>Маршрутизация по доменам (GeoIP / GeoSite):</strong> Весь трафик из списков заблокированных ресурсов (включая популярные зарубежные соцсети и видеохостинги) заворачивается на VPN-клиент роутера.</li>
+ <li><strong>Белый список (Bypass):</strong> Российские банки, госсервисы, локальные CDN-ресурсы и медиаплатформы жестко прописываются в исключения (bypass), отправляясь напрямую через шлюз вашего провайдера.</li>
+ <li><strong>Умный клиент Sing-box / Xray:</strong> Современные прошивки (OpenWrt с графической оболочкой LuCI-app-openclash или Nekobox-подобными модулями) позволяют настроить автоматическое обновление списков антиблокировки раз в сутки.</li>
+ </ul>
+
+ <h2>5. Итоговый вердикт: как организовать идеальный домашний интернет</h2>
+ <div class="verdict-box">
+ <h3>Шаг 1. Выберите надежный VPS за рубежом:</h3>
+ <p>Арендуйте недорогой сервер в Нидерландах, Германии или Финляндии с поддержкой безлимитного трафика и хорошей связностью с вашим провайдером.</p>
+ <hr>
+ <h3>Шаг 2. Разверните VLESS Reality или Amnezia:</h3>
+ <p>Используйте готовые скрипты автоматической установки (например, 3x-ui или Amnezia Desktop Client), чтобы поднять сервер за 5 минут без ручной правки конфигов.</p>
+ <hr>
+ <h3>Шаг 3. Настройте роутер с OpenWrt и Split Tunneling:</h3>
+ <p>Установите клиент на совместимый роутер, загрузите актуальные списки исключений для банков и наслаждайтесь свободным интернетом на каждом телевизоре, смартфоне и ноутбуке в доме без необходимости вручную щелкать тумблеры приложений.</p>
+ </div>
+ </div>
+ </article>
+
+ <section class="related-posts">
+ <h2>Похожие материалы</h2>
+ <div class="related-grid">
+ <a class="related-card" href="type-c-dock-station-workstation-setup.html">
+ <span class="rc-tag">Рабочее место</span>
+ <div class="rc-title">Идеальный сетап на одном кабеле: как подключить ноутбук через Type-C док-станцию</div>
+ </a>
+ <a class="related-card" href="steam-deck-oled-vs-switch-oled.html">
+ <span class="rc-tag">Гаджеты и консоли</span>
+ <div class="rc-title">Steam Deck OLED против Nintendo Switch 2 и Switch OLED: битва портативок в 2026 году</div>
+ </a>
+ </div>
+ </section>
+ </main>
+
+ <footer class="site-footer">
+ <div class="container footer-content">
+ <div class="footer-col">
+ <h4>ТехноГид</h4>
+ <p>Честные обзоры гаджетов, потребительской электроники и автотоваров.</p>
+ <a class="footer-tg" href="https://t.me/technogid_ru" target="_blank" rel="noopener">Телеграм-канал</a>
+ </div>
+ <div class="footer-col">
+ <h4>Навигация</h4>
+ <ul>
+ <li><a href="../index.html">Все обзоры</a></li>
+ <li><a href="../about.html">О проекте</a></li>
+ <li><a href="../contacts.html">Контакты</a></li>
+ <li><a href="../privacy.html">Политика конфиденциальности</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Информация</h4>
+ <p class="disclaimer">Сайт может содержать партнёрские ссылки.</p>
+ <p class="copy">© 2026 ТехноГид. Все права защищены.</p>
+ </div>
+ </div>
+ </footer>
+</body>
+</html>

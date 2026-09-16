@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Смартфон в телескопическом геймпаде с активным кулером на элементе Пельтье на задней панели">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/><stop offset="1" stop-color="#dbe4fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- left grip -->
+    <path d="M150 118 q-34 0 -34 34 v54 q0 34 34 34 h26 v-122 z" fill="#ffffff"/>
+    <circle cx="140" cy="156" r="14" fill="#e2e8f0"/>
+    <path d="M128 208 v20 M117 218 h22"/>
+    <!-- right grip -->
+    <path d="M490 118 q34 0 34 34 v54 q0 34 -34 34 h-26 v-122 z" fill="#ffffff"/>
+    <circle cx="500" cy="204" r="14" fill="#e2e8f0"/>
+    <circle cx="486" cy="150" r="7" fill="#38bdf8" stroke-width="4"/>
+    <circle cx="512" cy="164" r="7" fill="#ef4444" stroke-width="4"/>
+    <!-- phone -->
+    <rect x="176" y="104" width="288" height="152" rx="16" fill="#ffffff"/>
+    <rect x="196" y="122" width="248" height="116" rx="6" fill="#0f172a" stroke="none"/>
+    <path d="M300 150 l34 20 -34 20 z" fill="#38bdf8" stroke="none"/>
+  </g>
+
+  <!-- Peltier cooler clamped on back (shown offset above) -->
+  <g fill="none" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="286" y="34" width="68" height="60" rx="12" fill="#ffffff"/>
+    <circle cx="320" cy="64" r="20" fill="#e2e8f0"/>
+    <path d="M320 48 q11 16 0 32 M304 56 q16 8 32 0 M304 72 q16 -8 32 0" stroke="#2563eb" stroke-width="4"/>
+    <path d="M300 94 v14 M340 94 v14" stroke="#94a3b8"/>
+  </g>
+  <!-- cold side glow -->
+  <path d="M360 40 l5 -13 5 13 13 5 -13 5 -5 13 -5 -13 -13 -5z" fill="#38bdf8" stroke="#0ea5e9" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- heat arrows leaving the cooler -->
+  <g fill="none" stroke="#ef4444" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <path d="M296 30 q-6 -14 4 -24"/>
+    <path d="M320 26 q0 -14 0 -24"/>
+    <path d="M344 30 q6 -14 -4 -24"/>
+  </g>
+
+  <text x="320" y="320" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1e293b">Кулер Пельтье держит частоту чипа без троттлинга</text>
+</svg>

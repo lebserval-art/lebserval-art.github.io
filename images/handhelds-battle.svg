@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Сравнение портативных консолей: Steam Deck OLED, Nintendo Switch 2 и Nintendo Switch OLED">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#dbe4fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+
+  <!-- Steam Deck OLED (left) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M32 150 q0 -18 20 -18 h118 q18 0 18 18 v62 q0 18 -18 18 h-14 q-14 0 -18 13 l-6 20 q-5 16 -23 16 h-14 q-19 0 -23 -20 l-12 -70 q-3 -16 -10 -40 z" fill="#ffffff"/>
+    <rect x="60" y="150" width="98" height="62" rx="7" fill="#0f172a" stroke="none"/>
+    <circle cx="46" cy="238" r="9" fill="#e2e8f0"/>
+    <path d="M40 172 v20 M30 182 h20"/>
+    <circle cx="170" cy="166" r="7" fill="#38bdf8" stroke-width="3.5"/>
+    <circle cx="170" cy="188" r="7" fill="#e2e8f0" stroke-width="3.5"/>
+  </g>
+
+  <!-- Nintendo Switch 2 (center, larger) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="252" y="118" width="150" height="150" rx="13" fill="#ffffff"/>
+    <rect x="273" y="137" width="108" height="112" rx="5" fill="#0f172a" stroke="none"/>
+    <path d="M252 142 q-19 0 -19 19 v56 q0 19 19 19 z" fill="#2563eb"/>
+    <path d="M402 142 q19 0 19 19 v56 q0 19 -19 19 z" fill="#ef4444"/>
+    <circle cx="242" cy="190" r="5.5" fill="#ffffff" stroke-width="3.5"/>
+    <circle cx="412" cy="190" r="5.5" fill="#ffffff" stroke-width="3.5"/>
+  </g>
+
+  <!-- Nintendo Switch OLED (right, smaller) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="470" y="150" width="122" height="120" rx="11" fill="#ffffff"/>
+    <rect x="488" y="167" width="86" height="86" rx="4" fill="#0f172a" stroke="none"/>
+    <path d="M470 172 q-16 0 -16 16 v44 q0 16 16 16 z" fill="#38bdf8"/>
+    <path d="M592 172 q16 0 16 16 v44 q0 16 -16 16 z" fill="#ef4444"/>
+  </g>
+
+  <!-- separators -->
+  <g fill="#94a3b8">
+    <circle cx="222" cy="205" r="3.5"/>
+    <circle cx="440" cy="212" r="3.5"/>
+  </g>
+</svg>

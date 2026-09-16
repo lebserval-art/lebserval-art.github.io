@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Карта памяти microSD класса A2 U3 — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g transform="translate(200 200) rotate(-8) translate(-200 -200)">
+  <path d="M143 92 h84 l30 30 v186 a16 16 0 0 1 -16 16 h-98 a16 16 0 0 1 -16 -16 V108 a16 16 0 0 1 16 -16 z" fill="#1f5fa8"/>
+  <path d="M143 92 h84 l30 30 v186 a16 16 0 0 1 -16 16 h-98 a16 16 0 0 1 -16 -16 V108 a16 16 0 0 1 16 -16 z" fill="url(#sdg)" opacity="0.55"/>
+  <rect x="152" y="132" width="96" height="58" rx="6" fill="#0f3f75" opacity="0.55"/>
+  <g fill="#d7dde5">
+    <rect x="158" y="140" width="9" height="42" rx="3"/><rect x="173" y="140" width="9" height="42" rx="3"/>
+    <rect x="188" y="140" width="9" height="42" rx="3"/><rect x="203" y="140" width="9" height="42" rx="3"/>
+    <rect x="218" y="140" width="9" height="42" rx="3"/><rect x="233" y="140" width="9" height="42" rx="3"/>
+  </g>
+  <text x="200" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#ffffff">512</text>
+  <text x="200" y="260" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" opacity="0.9">GB microSDXC</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" fill="#ffffff">
+    <circle cx="168" cy="292" r="16" fill="#ffffff" opacity="0.16"/><text x="168" y="298" text-anchor="middle" font-size="13">A2</text>
+    <circle cx="206" cy="292" r="16" fill="#ffffff" opacity="0.16"/><text x="206" y="298" text-anchor="middle" font-size="13">U3</text>
+    <circle cx="244" cy="292" r="16" fill="#ffffff" opacity="0.16"/><text x="244" y="298" text-anchor="middle" font-size="12">V30</text>
+  </g>
+</g>
+<defs><linearGradient id="sdg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4aa3ff"/><stop offset="100%" stop-color="#0b3b73"/></linearGradient></defs>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Накладки-лепестки на задние кнопки Steam Deck — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g>
+  <path d="M64 132 h272 a24 24 0 0 1 24 24 v88 a24 24 0 0 1 -24 24 h-272 a24 24 0 0 1 -24 -24 v-88 a24 24 0 0 1 24 -24 z" fill="#2f3540"/>
+  <rect x="92" y="152" width="216" height="96" rx="14" fill="#242932"/>
+  <g>
+    <path d="M104 258 q26 -6 46 4 q-6 26 -28 30 q-20 4 -22 -18 z" fill="#7a5cff"/>
+    <path d="M148 258 q26 -6 46 4 q-6 26 -28 30 q-20 4 -22 -18 z" fill="#5c46c4"/>
+    <path d="M206 262 q26 -10 46 -4 q4 26 -16 34 q-22 8 -30 -12 z" fill="#5c46c4"/>
+    <path d="M250 262 q26 -10 46 -4 q4 26 -16 34 q-22 8 -30 -12 z" fill="#7a5cff"/>
+  </g>
+  <g fill="#9aa0aa" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">
+    <text x="126" y="316" text-anchor="middle">L4 L5</text>
+    <text x="272" y="316" text-anchor="middle">R4 R5</text>
+  </g>
+</g>
+<text x="200" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#6b6b76">накладки на задние кнопки</text>
+</svg>

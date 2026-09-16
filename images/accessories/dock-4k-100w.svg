@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Type-C док-станция с выводом 4K 60 Гц и зарядкой 100 Вт — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<rect x="112" y="70" width="176" height="106" rx="8" fill="#26262b"/>
+<rect x="120" y="78" width="160" height="82" rx="4" fill="#12304a"/>
+<text x="200" y="120" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#8fd6ff">4K</text>
+<text x="200" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#8fd6ff" opacity="0.85">60 Hz</text>
+<rect x="184" y="176" width="32" height="16" fill="#26262b"/>
+<rect x="150" y="192" width="100" height="8" rx="4" fill="#26262b"/>
+<path d="M200 206 v22" stroke="#9aa0aa" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 7"/>
+<rect x="84" y="234" width="232" height="70" rx="14" fill="#2f2f36"/>
+<rect x="84" y="234" width="232" height="18" rx="14" fill="#3b3b44"/>
+<g>
+  <rect x="104" y="266" width="34" height="16" rx="6" fill="#15151a"/>
+  <rect x="150" y="266" width="34" height="16" rx="6" fill="#15151a"/>
+  <rect x="196" y="266" width="34" height="16" rx="3" fill="#15151a"/>
+  <rect x="242" y="266" width="34" height="16" rx="3" fill="#15151a"/>
+  <rect x="288" y="264" width="14" height="20" rx="3" fill="#15151a"/>
+</g>
+<g>
+  <rect x="112" y="318" width="176" height="30" rx="15" fill="#e9eaee"/>
+  <text x="200" y="338" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#3a3a42">PD 100W · HDMI · LAN</text>
+</g>
+</svg>

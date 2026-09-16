@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Прозрачная задняя крышка для Steam Deck — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g>
+  <path d="M64 128 h272 a26 26 0 0 1 26 26 v92 a26 26 0 0 1 -26 26 h-272 a26 26 0 0 1 -26 -26 v-92 a26 26 0 0 1 26 -26 z" fill="#20242b"/>
+  <g opacity="0.9">
+    <rect x="96" y="152" width="96" height="66" rx="6" fill="#2f6f3f"/>
+    <g fill="#1f4a2b"><rect x="104" y="160" width="26" height="18" rx="2"/><rect x="138" y="160" width="20" height="18" rx="2"/><rect x="104" y="186" width="18" height="24" rx="2"/><rect x="130" y="186" width="28" height="24" rx="2"/></g>
+    <circle cx="176" cy="170" r="6" fill="#c8a13a"/><circle cx="176" cy="200" r="6" fill="#c8a13a"/>
+    <rect x="208" y="152" width="88" height="46" rx="6" fill="#3a3f48"/>
+    <circle cx="252" cy="175" r="20" fill="#4b515c"/><circle cx="252" cy="175" r="8" fill="#20242b"/>
+    <g stroke="#5c636f" stroke-width="2"><path d="M252 155 l0 40"/><path d="M232 175 l40 0"/><path d="M238 161 l28 28"/><path d="M266 161 l-28 28"/></g>
+    <rect x="208" y="206" width="88" height="14" rx="5" fill="#8f76ff" opacity="0.75"/>
+  </g>
+  <path d="M64 128 h272 a26 26 0 0 1 26 26 v92 a26 26 0 0 1 -26 26 h-272 a26 26 0 0 1 -26 -26 v-92 a26 26 0 0 1 26 -26 z" fill="#bcd6e8" opacity="0.22"/>
+  <path d="M84 128 l-40 144" stroke="#ffffff" stroke-width="16" opacity="0.16" stroke-linecap="round"/>
+  <path d="M132 128 l-40 144" stroke="#ffffff" stroke-width="8" opacity="0.12" stroke-linecap="round"/>
+</g>
+<text x="200" y="326" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#6b6b76">прозрачная задняя крышка</text>
+</svg>

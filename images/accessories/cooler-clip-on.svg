@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Навесной кулер для Steam Deck — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g>
+  <rect x="66" y="196" width="268" height="96" rx="22" fill="#2b303a"/>
+  <rect x="86" y="212" width="228" height="64" rx="12" fill="#1c2027"/>
+  <g fill="#3a404b"><rect x="98" y="224" width="14" height="40" rx="4"/><rect x="120" y="224" width="14" height="40" rx="4"/><rect x="142" y="224" width="14" height="40" rx="4"/><rect x="266" y="224" width="14" height="40" rx="4"/><rect x="288" y="224" width="14" height="40" rx="4"/></g>
+</g>
+<g>
+  <rect x="128" y="94" width="144" height="110" rx="18" fill="#343b46"/>
+  <circle cx="200" cy="149" r="46" fill="#1b1f26"/>
+  <g fill="#5c636f">
+    <path d="M200 149 m0 -40 a40 40 0 0 1 26 12 l-26 28 z"/>
+    <path d="M200 149 m40 0 a40 40 0 0 1 -12 26 l-28 -26 z"/>
+    <path d="M200 149 m0 40 a40 40 0 0 1 -26 -12 l26 -28 z"/>
+    <path d="M200 149 m-40 0 a40 40 0 0 1 12 -26 l28 26 z"/>
+  </g>
+  <circle cx="200" cy="149" r="13" fill="#7a5cff"/>
+  <rect x="118" y="150" width="14" height="54" rx="6" fill="#454c58"/>
+  <rect x="268" y="150" width="14" height="54" rx="6" fill="#454c58"/>
+</g>
+<g stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.8">
+  <path d="M112 118 q-16 16 0 32"/><path d="M92 108 q-20 22 0 44"/>
+  <path d="M288 118 q16 16 0 32"/><path d="M308 108 q20 22 0 44"/>
+</g>
+<text x="200" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#6b6b76">навесной кулер</text>
+</svg>

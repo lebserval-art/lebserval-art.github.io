@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" role="img" aria-label="realme 13+ 5G — тонкая задняя панель с вертикальным блоком камеры">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/><stop offset="1" stop-color="#dbe4fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="440" fill="url(#bg)"/>
+  <g stroke="#1e293b" stroke-width="5" stroke-linejoin="round">
+    <rect x="80" y="26" width="160" height="388" rx="32" fill="#8fd6c4"/>
+    <!-- vertical pill camera module, left -->
+    <rect x="98" y="50" width="52" height="110" rx="26" fill="#7cc9b6"/>
+    <circle cx="124" cy="80" r="18" fill="#0b0b0f"/>
+    <circle cx="124" cy="80" r="8" fill="#475569"/>
+    <circle cx="124" cy="128" r="18" fill="#0b0b0f"/>
+    <circle cx="124" cy="128" r="8" fill="#475569"/>
+    <circle cx="170" cy="66" r="6" fill="#0b0b0f"/>
+    <rect x="164" y="86" width="12" height="7" rx="3.5" fill="#fca5a5" stroke="none"/>
+  </g>
+  <text x="160" y="316" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#155e52" letter-spacing="0.5">realme</text>
+  <text x="160" y="338" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#1f7d6e">13+ 5G</text>
+  <text x="204" y="404" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#155e52">80W · тонкий корпус</text>
+</svg>

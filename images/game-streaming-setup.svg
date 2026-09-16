@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Смартфон с телескопическим геймпадом, локальный стриминг с ПК и PS5, кулер и питание">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#dbe4fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+
+  <!-- streaming arcs -->
+  <g fill="none" stroke="#2563eb" stroke-width="4.5" stroke-linecap="round" opacity="0.4">
+    <path d="M150 150 q40 46 96 60"/>
+    <path d="M138 122 q60 72 130 84"/>
+    <path d="M492 150 q-40 46 -96 60"/>
+    <path d="M504 122 q-60 72 -130 84"/>
+  </g>
+
+  <!-- PC tower (left) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="54" y="96" width="86" height="150" rx="10" fill="#ffffff"/>
+    <path d="M72 118 h50 M72 136 h50"/>
+    <circle cx="97" cy="182" r="18" fill="#38bdf8" stroke-width="4.5"/>
+    <circle cx="97" cy="182" r="6" fill="#0f172a" stroke="none"/>
+    <circle cx="120" cy="224" r="4.5" fill="#22c55e" stroke-width="3.5"/>
+  </g>
+
+  <!-- PS5-style console (right) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M500 92 q14 0 14 16 v120 q0 16 -14 16 h-8 q-14 0 -14 -16 v-120 q0 -16 14 -16 z" fill="#ffffff"/>
+    <path d="M478 150 h36"/>
+    <circle cx="496" cy="118" r="4.5" fill="#38bdf8" stroke-width="3.5"/>
+  </g>
+
+  <!-- Phone + telescopic gamepad (center) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- left grip -->
+    <path d="M232 150 q-30 0 -30 30 v46 q0 30 30 30 h20 v-106 z" fill="#ffffff"/>
+    <circle cx="224" cy="182" r="12" fill="#e2e8f0"/>
+    <path d="M212 226 v18 M203 235 h18"/>
+    <!-- right grip -->
+    <path d="M408 150 q30 0 30 30 v46 q0 30 -30 30 h-20 v-106 z" fill="#ffffff"/>
+    <circle cx="416" cy="216" r="12" fill="#e2e8f0"/>
+    <circle cx="404" cy="176" r="6" fill="#38bdf8" stroke-width="3.5"/>
+    <circle cx="428" cy="188" r="6" fill="#ef4444" stroke-width="3.5"/>
+    <!-- phone -->
+    <rect x="248" y="140" width="144" height="126" rx="12" fill="#ffffff"/>
+    <rect x="264" y="156" width="112" height="94" rx="5" fill="#0f172a" stroke="none"/>
+    <path d="M308 182 l26 15 -26 15 z" fill="#38bdf8" stroke="none"/>
+  </g>
+
+  <!-- Peltier cooler + snowflake (top of phone) -->
+  <g fill="none" stroke="#1e293b" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="320" cy="118" r="20" fill="#ffffff"/>
+    <path d="M320 104 q9 14 0 28 M308 111 q12 7 24 0 M308 125 q12 -7 24 0" stroke="#2563eb" stroke-width="3.5"/>
+  </g>
+  <path d="M356 96 l4 -10 4 10 10 -4 -6 9 6 9 -10 -4 -4 10 -4 -10 -10 4 6 -9 -6 -9z" fill="#38bdf8" stroke="#0ea5e9" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- power bank (bottom, MagSafe) -->
+  <g fill="none" stroke="#1e293b" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="286" y="286" width="68" height="40" rx="9" fill="#ffffff"/>
+    <path d="M303 306 h34"/>
+    <path d="M318 300 l-6 10 h8 l-6 10" stroke="#facc15" stroke-width="4"/>
+  </g>
+</svg>

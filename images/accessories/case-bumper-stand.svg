@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Защитный чехол-бампер для Steam Deck с подставкой — схематичный рендер">
+<rect x="20" y="20" width="360" height="360" rx="28" fill="#f4f5f7"/>
+<g transform="translate(0 -6)">
+  <rect x="58" y="128" width="284" height="150" rx="30" fill="#3f4a5a"/>
+  <rect x="58" y="128" width="76" height="150" rx="30" fill="#4b5768"/>
+  <rect x="266" y="128" width="76" height="150" rx="30" fill="#4b5768"/>
+  <rect x="76" y="142" width="248" height="122" rx="20" fill="#22262e"/>
+  <rect x="140" y="156" width="120" height="94" rx="7" fill="#0d1b2a"/>
+  <rect x="146" y="162" width="108" height="82" rx="4" fill="#16324a"/>
+  <circle cx="106" cy="180" r="13" fill="#1d1d22"/><circle cx="106" cy="180" r="6" fill="#4a4a54"/>
+  <circle cx="294" cy="180" r="13" fill="#1d1d22"/><circle cx="294" cy="180" r="6" fill="#4a4a54"/>
+  <circle cx="283" cy="226" r="7" fill="#1d1d22"/><circle cx="305" cy="226" r="7" fill="#1d1d22"/>
+  <circle cx="294" cy="215" r="7" fill="#1d1d22"/><circle cx="294" cy="237" r="7" fill="#1d1d22"/>
+  <rect x="96" y="215" width="20" height="8" rx="4" fill="#1d1d22"/>
+  <rect x="102" y="209" width="8" height="20" rx="4" fill="#1d1d22"/>
+  <path d="M170 278 l-42 62 h28 l42 -62 z" fill="#5a6779"/>
+  <path d="M230 278 l42 62 h-28 l-42 -62 z" fill="#4b5768"/>
+  <rect x="118" y="336" width="164" height="10" rx="5" fill="#c9ced6"/>
+</g>
+<text x="200" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#6b6b76">бампер + подставка</text>
+</svg>
