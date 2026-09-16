@@ -54,4 +54,4 @@
 
 Полный тест с ценами и ссылками на все модели — на сайте: [techno-gid.ru/articles/top-dashcams-2026.html](https://techno-gid.ru/articles/top-dashcams-2026.html)
 
-Больше разборов железа и скидок — в нашем Telegram: [ССЫЛКА НА TELEGRAM-КАНАЛ — вставить перед публикацией]
+Больше разборов железа и скидок — в нашем Telegram: [t.me/technogid_ru](https://t.me/technogid_ru)
