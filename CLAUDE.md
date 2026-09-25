@@ -197,12 +197,27 @@ verification-мет на одну больше (3 yandex).
 - **🟢 Уже настоящие партнёрские ссылки**: `flagships-2026-old-vs-new.html`,
   `best-smartphones-under-30000.html`, `local-game-streaming-guide.html`,
   `steam-deck-oled-vs-switch-oled.html`, `type-c-dock-station-workstation-setup.html`.
-  **Но** в `flagships-2026-old-vs-new.html` найдено 14 диплинков через
-  `rzekl.com` (не 57 — это было по всему сайту) без параметра `erid`
-  (нарушение закона о маркировке рекламы) и ведущих на страницы поиска
-  AliExpress, а не на карточки товара (по правилам программы AliExpress
-  RU&CIS комиссия не начисляется за переходы на поиск). Сергей поднял эту
-  статью следующей в очередь, генерирует новые ссылки сам.
+
+### flagships-2026-old-vs-new.html — чистка rzekl.com (25.09.2026)
+
+Было 14 диплинков через `rzekl.com` (не 57 — это было по всему сайту) без
+параметра `erid` (нарушение закона о маркировке рекламы) и ведущих на
+страницы поиска AliExpress, а не на карточки товара (по правилам программы
+AliExpress RU&CIS комиссия не начисляется за переходы на поиск).
+
+**Исправлено** (коммит `802021c`): 12 заменены на реальные `ali.click`-ссылки
+с erid от Сергея (проверены по живым карточкам 25.09.2026), у iPhone 16 Pro и
+Google Pixel 9 кнопка AliExpress убрана полностью (нет надёжного продавца) —
+у обоих остался только Яндекс.Маркет. Заодно поправлен disclaimer-параграф
+«Реклама. ООО «Алибаба.ком (РУ)»…» для этих 12 — добавлен `erid` по образцу
+`local-game-streaming-guide.html` (там же он раньше отсутствовал).
+
+**Найдено, но не тронуто (вне рамок этой задачи):** в файле ещё 14
+affiliate-карточек с уже рабочими `ali.click`-ссылками (не `rzekl.com`), но у
+них тот же disclaimer-баг — в параграфе про «Алибаба.ком (РУ)» тоже нет
+`erid`. Это чисто текстовая правка (эрид в ссылке уже есть, просто не
+продублирован в disclaimer), можно быстро исправить одним заходом, если
+Сергей подтвердит.
 - **Механика диплинков `rzekl.com`**: подтверждено (Сергей проверил в
   кабинете Admitad) — это постоянный Deeplink-генератор аккаунта в программе
   AliExpress RU&CIS (не разовая ссылка), `subid=`/`ulp=` можно подставлять
@@ -227,7 +242,7 @@ verification-мет на одну больше (3 yandex).
 | Смартфон как консоль: локальный стриминг, Winlator | `articles/local-game-streaming-guide.html` | 08.09.2026 | ✅ | ✅ |
 | Steam Deck (полный гид) | `articles/steam-deck.html` | 09.09.2026 | ✅ | ✅ |
 | Аксессуары для Steam Deck | `articles/steam-deck-accessories.html` | 09.09.2026 | ✅ | ✅ |
-| Битва поколений флагманов 2026 | `articles/flagships-2026-old-vs-new.html` | 08.09.2026 | ✅ | ✅ |
+| Битва поколений флагманов 2026 | `articles/flagships-2026-old-vs-new.html` | 08.09.2026 (14 rzekl.com-ссылок на AliExpress заменены на erid-трекнутые ali.click, 25.09.2026) | ✅ | ✅ |
 | Смартфоны до 30 000 ₽ | `articles/best-smartphones-under-30000.html` | 08.09.2026 | ✅ | ✅ |
 | Steam Deck OLED vs Switch | `articles/steam-deck-oled-vs-switch-oled.html` | 07.09.2026 | ✅ | ✅ |
 | Type-C док-станция | `articles/type-c-dock-station-workstation-setup.html` | 07.09.2026 | ✅ | ✅ |
