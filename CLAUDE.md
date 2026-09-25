@@ -212,12 +212,12 @@ Google Pixel 9 кнопка AliExpress убрана полностью (нет �
 «Реклама. ООО «Алибаба.ком (РУ)»…» для этих 12 — добавлен `erid` по образцу
 `local-game-streaming-guide.html` (там же он раньше отсутствовал).
 
-**Найдено, но не тронуто (вне рамок этой задачи):** в файле ещё 14
-affiliate-карточек с уже рабочими `ali.click`-ссылками (не `rzekl.com`), но у
-них тот же disclaimer-баг — в параграфе про «Алибаба.ком (РУ)» тоже нет
-`erid`. Это чисто текстовая правка (эрид в ссылке уже есть, просто не
-продублирован в disclaimer), можно быстро исправить одним заходом, если
-Сергей подтвердит.
+**Исправлено 25.09.2026** (коммит `b4d175a`): оставшиеся 14 disclaimer-абзацев
+«Реклама. ООО «Алибаба.ком (РУ)»…» тоже получили `erid` (сами ссылки не
+трогали, только текст пометки). Теперь во всех 26 AliExpress-карточках файла
+(28 минус iPhone 16 Pro и Pixel 9 без кнопки) erid проставлен и в ссылке, и в
+disclaimer. Проверено напрямую на raw.githubusercontent.com (после истечения
+5-минутного edge-кэша) — 0 совпадений «ИНН 7703380158</p>» без erid.
 - **Механика диплинков `rzekl.com`**: подтверждено (Сергей проверил в
   кабинете Admitad) — это постоянный Deeplink-генератор аккаунта в программе
   AliExpress RU&CIS (не разовая ссылка), `subid=`/`ulp=` можно подставлять
@@ -242,7 +242,7 @@ affiliate-карточек с уже рабочими `ali.click`-ссылкам
 | Смартфон как консоль: локальный стриминг, Winlator | `articles/local-game-streaming-guide.html` | 08.09.2026 | ✅ | ✅ |
 | Steam Deck (полный гид) | `articles/steam-deck.html` | 09.09.2026 | ✅ | ✅ |
 | Аксессуары для Steam Deck | `articles/steam-deck-accessories.html` | 09.09.2026 | ✅ | ✅ |
-| Битва поколений флагманов 2026 | `articles/flagships-2026-old-vs-new.html` | 08.09.2026 (14 rzekl.com-ссылок на AliExpress заменены на erid-трекнутые ali.click, 25.09.2026) | ✅ | ✅ |
+| Битва поколений флагманов 2026 | `articles/flagships-2026-old-vs-new.html` | 08.09.2026 (14 rzekl.com-ссылок заменены на erid-трекнутые ali.click + erid добавлен во все 26 disclaimer-абзацев AliExpress, 25.09.2026) | ✅ | ✅ |
 | Смартфоны до 30 000 ₽ | `articles/best-smartphones-under-30000.html` | 08.09.2026 | ✅ | ✅ |
 | Steam Deck OLED vs Switch | `articles/steam-deck-oled-vs-switch-oled.html` | 07.09.2026 | ✅ | ✅ |
 | Type-C док-станция | `articles/type-c-dock-station-workstation-setup.html` | 07.09.2026 | ✅ | ✅ |
