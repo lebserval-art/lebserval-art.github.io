@@ -1305,6 +1305,16 @@ a.btn-secondary:hover { border-color: var(--accent); }
 
 .affiliate-card .affiliate-disclaimer + .affiliate-disclaimer { margin-top: 4px; }
 
+.product-card .affiliate-disclaimer {
+    margin: 10px 0 0;
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+}
+
+.product-card .affiliate-disclaimer + .affiliate-disclaimer { margin-top: 4px; }
+
 .affiliate-card > p {
     margin: 0 0 14px;
     font-size: 0.92rem;
