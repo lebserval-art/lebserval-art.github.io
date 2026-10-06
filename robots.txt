@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lebserval-art.github.io/sitemap.xml
+Sitemap: https://techno-gid.ru/sitemap.xml
