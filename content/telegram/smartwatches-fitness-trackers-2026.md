@@ -1,0 +1,18 @@
+<!--
+Фото для альбома: в репозитории нет фото носимых устройств (images/smartwatch.svg для альбома не подходит).
+Нужны 2–3 официальных промо-изображения в images/smartwatches/: Huawei Watch Fit 5 Pro, Apple Watch Series 11, Xiaomi Smart Band 10.
+Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/smartwatches/
+Текст поста — всё ниже строки «--- ПОСТ ---» (лимит 950 знаков, считать вместе со ссылками).
+-->
+
+--- ПОСТ ---
+⌚ Заряжать часы каждый вечер или раз в 1–2 недели? Главная ловушка — купить флагман и через месяц бросить его на тумбочку из-за зарядки.
+
+Что смотрели в карточках Маркета:
+• Huawei Watch Fit 5 Pro — «золотая середина», до 10 дней по заявлению: https://market.yandex.ru/cc/BFQPRU
+• Apple Watch Series 11 — для iPhone, зарядка раз в 1–2 дня: https://market.yandex.ru/cc/BFQQYh
+• Xiaomi Smart Band 10 — бюджетный браслет: https://market.yandex.ru/cc/BFQRRq
+
+Реклама. ООО «Яндекс Маркет», ИНН 9704254424
+
+Про кольца, Garmin и подводные камни — в статье: https://techno-gid.ru/articles/smartwatches-fitness-trackers-2026.html
