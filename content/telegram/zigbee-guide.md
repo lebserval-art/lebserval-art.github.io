@@ -14,7 +14,7 @@ Wi-Fi плохо подходит для датчиков: держит связ
 
 Что нашли в карточках:
 • Яндекс Хаб (Zigbee, ИК, Алиса): https://market.yandex.ru/cc/BFiRNB
-• Aqara E1 QBKG38LM, выключатель без нейтрали (Zigbee — проверить в карточке): https://market.yandex.ru/cc/BFiSKY
+• Aqara E1 QBKG38LM, выключатель без нейтрали, Zigbee 3.0: https://market.yandex.ru/cc/BFiSKY
 
 Реклама. ООО «Яндекс Маркет», ИНН 9704254424
 
