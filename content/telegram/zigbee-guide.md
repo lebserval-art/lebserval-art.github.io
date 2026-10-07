@@ -1,5 +1,7 @@
 <!--
-Фото: в репозитории нет (пост — без картинок; при желании взять официальные промо Яндекс Хаба и Aqara E1 и положить в images/zigbee/).
+Фото (из images/zigbee/, официальное фото Яндекса):
+1. yandex-hub.webp — Яндекс Хаб
+Фото Aqara E1 QBKG38LM нет (нет на официальных сайтах Aqara).
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/zigbee/
 Текст поста — всё ниже строки «--- ПОСТ ---»
 -->
