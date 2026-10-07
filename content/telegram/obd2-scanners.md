@@ -1,6 +1,9 @@
 <!--
-Фото для альбома: в репозитории нет фото OBD2-сканеров (images/obd2-scanner.svg для альбома не подходит) — пост уходит без альбома или с фото, добавленным позже в images/obd2-scanners/.
-Raw-база (на будущее): https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/obd2-scanners/
+Фото для альбома (из images/obd2-scanners/, официальные промо Vgate и Autel), порядок:
+1. vgate-icar-pro-ble.webp — Vgate iCar Pro (BLE 4.0)
+2. autel-maxicom-mk808bt-family.webp — Autel MaxiCOM MK808BT/MK808K-BT (фото семейства, ~444 px — низкое разрешение; в посте Autel не упоминается)
+Фото Rokodil ScanX нет (нет официального сайта производителя).
+Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/obd2-scanners/
 Текст поста — всё ниже строки «--- ПОСТ ---» (лимит 950 знаков, считать вместе со ссылками).
 -->
 

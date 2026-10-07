@@ -134,6 +134,12 @@
 
 _Обновлено: 07.10.2026 (пауэрбанк-гид; OBD2 по стандарту «Сайт → Дзен → Telegram»; ранее — ТВ-боксы, смарт-часы, аудит, «Топ-5» пауэрбанков, Steam Deck)_
 
+### Фото роботов-пылесосов и OBD2 (07.10.2026)
+
+Официальные промо, снятые в Chrome (кропы скриншотов, .webp). `images/robot-vacuums/`: `dreame-l40s-ultra.webp` (с официальной страницы Dreame, плашка «3-Year Warranty» закрашена), `dreame-bot-f10.webp` (ge.dreametech.com), `roborock-qrevo-curv-series.webp` (global.roborock.com — **фото серии Curv, не конкретно CurvX, подпись в статье это говорит**).
+Пути в `robot-vacuums-2026.html` переведены на `images/robot-vacuums/*.webp`; блоки фото для **Midea VCR S8 EVO Plus BK и Roborock Qrevo C Pro убраны** (официальных кадров не нашли; старая папка `images/robot-vacuums-2026/` не нужна). Обложка Дзена — L40s Ultra (`content/dzen/robot-vacuums-2026.md`); `content/telegram/robot-vacuums-2026.md` — только шапка со списком фото, текста поста нет.
+`images/obd2-scanners/`: `vgate-icar-pro-ble.webp` (vgatemall.com), `autel-maxicom-mk808bt-family.webp` (autel.com, фото семейства MK808BT/Z-BT/K-BT, **низкое разрешение ~444 px**). **Фото Rokodil ScanX нет** (нет официального сайта). Обложка в `content/dzen/obd2-scanners.md` добавлена, но статья в Дзене уже опубликована без обложки — добавить вручную.
+
 ### powerbank-buying-guide-2026.html — реальные ссылки + Дзен + Telegram (07.10.2026)
 
 Три брендовые карточки-поиска (Ugreen/Baseus/Anker-Romoss) привязаны к моделям, сверены с витриной 07.10.2026 (все — Маркет, автомаркировка, плашка без erid):
