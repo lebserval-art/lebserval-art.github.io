@@ -144,7 +144,7 @@ Xiaomi Smart Band 10 (Xiaomi Mi Home, 5,0★/10, «Оригинал»; Band 11 �
 Убран выдуманный «Личный опыт» (Fit 3 два года и т.п.) → нейтральный раздел «по отзывам и данным производителя»; бейдж «Личная рекомендация» → «Выбор ТехноГид»; колонка цен → «Ориентировочная цена (проверить)».
 **Проверить:** диапазоны цен в таблице; тезисы про iOS-связь Huawei Health; Amazfit Balance и Galaxy Ring/Oura без ссылок.
 Дзен: **статья на эту тему уже опубликована** (~2 нед. назад, проверено в браузере 07.10) — подготовлена версия-обновление `content/dzen/smartwatches-fitness-trackers-2026.md` (переименован из `04_smartwatches_2026.md`; в опубликованной версии был выдуманный опыт «Я сам прошёл…» — заменить текст в Дзене).
-Telegram: `content/telegram/smartwatches-fitness-trackers-2026.md` (621 зн.); **фото носимых устройств нет** — нужны в `images/smartwatches/`.
+Telegram: `content/telegram/smartwatches-fitness-trackers-2026.md` (621 зн.); фото (07.10.2026): `images/smartwatches/{huawei-watch-fit-5-pro,xiaomi-smart-band-10}.webp` — официальные промо; Apple Watch S11 фото нет (на apple.com уже Series 12), в пост не включали.
 
 ### top-tv-boxes-2026.html — реальные ссылки + Дзен + Telegram (07.10.2026)
 

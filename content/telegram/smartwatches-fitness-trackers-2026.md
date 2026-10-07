@@ -1,6 +1,8 @@
 <!--
-Фото для альбома: в репозитории нет фото носимых устройств (images/smartwatch.svg для альбома не подходит).
-Нужны 2–3 официальных промо-изображения в images/smartwatches/: Huawei Watch Fit 5 Pro, Apple Watch Series 11, Xiaomi Smart Band 10.
+Фото для альбома (порядок показа), официальные промо производителей:
+1. images/smartwatches/huawei-watch-fit-5-pro.webp
+2. images/smartwatches/xiaomi-smart-band-10.webp
+(Apple Watch Series 11: на сайте Apple уже Series 12, фото S11 нет — не подставляли чужую модель.)
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/smartwatches/
 Текст поста — всё ниже строки «--- ПОСТ ---» (лимит 950 знаков, считать вместе со ссылками).
 -->
