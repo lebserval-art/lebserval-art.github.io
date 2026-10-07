@@ -1,13 +1,13 @@
 <!--
 Дзен-версия статьи «Лучшие ТВ-приставки 2026» (site: articles/top-tv-boxes-2026.html).
-Картинки: в репозитории нет фото ТВ-приставок (только images/tv-box.svg — Дзен не принимает SVG).
-Обложка и 2–3 иллюстрации (студийный рендер, стиль Б) нужно сгенерировать и положить в images/tv-boxes/,
-после чего вставить raw-ссылками: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/tv-boxes/<файл>
+Обложка — xiaomi-mi-box-s-3rd-gen.webp; фото — официальные промо-изображения производителей (Xiaomi, Google, Ugoos), images/tv-boxes/.
 Список моделей — сверен с витриной 07.10.2026, цены не публиковались.
-Старый черновик 01_tv_boxes_2026.md устарел (3 плейсхолдера, нет ссылок).
 -->
 
 # ТВ-приставка за копейки: почему «печка» на Allwinner не стоит экономии
+
+![Xiaomi TV Box S 3rd Gen](https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/tv-boxes/xiaomi-mi-box-s-3rd-gen.webp)
+*Xiaomi TV Box S (3rd Gen). Фото: Xiaomi.*
 
 Телевизор тормозит, YouTube подвисает, а вместе с ним — и вечер. Решение понятно: купить приставку. А дальше начинается лотерея: на маркетплейсах сотни «4K-боксов» за пару тысяч, и половина из них нагревается так, что хоть яичницу жарь. Разобрали, на что смотреть, и какие модели мы бы взяли в 2026 году.
 
@@ -35,6 +35,9 @@
 👉 [Смотреть на Яндекс Маркете](https://market.yandex.ru/cc/BFQ2eX)
 
 **Google TV Streamer 4K** — чистый Google TV, Ethernet и Thread-хаб для умного дома. В карточке — не официальная поставка (параллельный импорт), гарантию уточняйте.
+![Google TV Streamer](https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/tv-boxes/google-tv-streamer-4k.webp)
+*Google TV Streamer. Фото: Google.*
+
 👉 [Смотреть на Яндекс Маркете](https://market.yandex.ru/cc/BFQ3kQ)
 
 **Apple TV 4K (3-го поколения, 128 ГБ)** — самая плавная система и аппаратный AFR, но закрытая ОС и высокая цена.
@@ -43,6 +46,9 @@
 *Реклама. ООО «Яндекс Маркет», ИНН 9704254424*
 
 **Для гиков.** UGOOS TOX3 (Amlogic S905X4, 4/32 ГБ) — формальная мощность за небольшие деньги, но, по отзывам, нужны прошивки и танцы с бубном. Ugoos AM9 Pro — для киноманов, которым важен AFR; в отзывах к лоту покупатели путают AM8 и AM9, поэтому сверяйте модель.
+![Ugoos AM9](https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/tv-boxes/ugoos-am9-pro.webp)
+*Ugoos AM9. Фото: Ugoos.*
+
 👉 [UGOOS TOX3 на AliExpress](https://ali.click/s29an1z?gc=vv3q4oey1v45a0b39c6cb6d1781017&erid=2bL9aMPo2e49hMef4pdzo6JkYp&i=1)
 👉 [Ugoos AM9 Pro на AliExpress](https://ali.click/q29an1u?gc=vv3q4oey1v45a0b39c6cb6d1781017&erid=2bL9aMPo2e49hMef4pdzo6JkYp&i=1)
 

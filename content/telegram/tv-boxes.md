@@ -1,6 +1,8 @@
 <!--
-Фото для альбома: в репозитории нет фото ТВ-приставок (есть только images/tv-box.svg — для Telegram-альбома не подходит).
-Нужны 2–3 студийных рендера (стиль Б) в images/tv-boxes/: рекомендуемый порядок — общий кадр подборки, Xiaomi Mi Box S, Apple TV/Google TV Streamer.
+Фото для альбома (из images/tv-boxes/, официальные промо-изображения производителей), порядок:
+1. xiaomi-mi-box-s-3rd-gen.webp — Xiaomi TV Box S (3rd Gen)
+2. google-tv-streamer-4k.webp — Google TV Streamer
+3. ugoos-am9-pro.webp — Ugoos AM9
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/images/tv-boxes/
 Текст поста — всё ниже строки «--- ПОСТ ---» (лимит 950 знаков, считать вместе со ссылками).
 -->
