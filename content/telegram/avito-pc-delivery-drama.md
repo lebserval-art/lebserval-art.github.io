@@ -4,7 +4,7 @@
 1. images/avito-pc-drama/cover.jpg
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/
 Ссылка в конце — на статью в Дзене (по просьбе автора). Основа — реальный опыт (EXPERIENCE.md, раздел 6).
-Статус: текст готов, не отправлен.
+Статус: отправлен в @technogid_ru 09.10.2026 с обложкой cover.jpg.
 -->
 
 --- ПОСТ ---
