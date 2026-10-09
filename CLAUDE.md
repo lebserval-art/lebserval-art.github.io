@@ -140,8 +140,8 @@ _Обновлено: 09.10.2026 (вторая личная статья «Два
 Текст автора (Mac mini M4 + ноутбук Honor на одном мониторе, HDMI-свитч, кресло) опубликован по `EXPERIENCE.md`, раздел 6. Правка анонимности: «взрослого мужика (под 100 кг)» → «крупного взрослого человека (под 100 кг)».
 Сайт: `articles/mac-mini-dual-pc-setup.html` + карточка в `index.html` + `<url>` в `sitemap.xml`; пути из ТЗ (`content/articles/*.md`, `assets/images/...`) заменены на принятые в репо (`articles/*.html`, `images/mac-mini-dual-pc/{cover,mac-ugreen-dock,laptop-vertical-stand,hdmi-switch}.jpg`, baseline JPEG).
 **Приватность на фото:** на обложке заблюрены город в виджете погоды Windows и надпись с именами на камне; кадр с рукой/часами (палец на кнопке свитча) не использован — вместо него снимок свитча без руки.
-Дзен: `dzen.ru/a/asiwg1eIBwIQnuVW` (текст `content/dzen/mac-mini-dual-pc-setup.md`; 4 фото загружены через редактор, обложка — общий вид стола). Telegram: `content/telegram/mac-mini-dual-pc-setup.md` — **текст готов, не отправлен**.
-**Проверить:** в тексте мышь работает с ноутбуком через радиосвисток в доке, а в EXPERIENCE.md сказано «радиосвистки не потребовались» — уточнить у автора.
+Дзен: `dzen.ru/a/asiwg1eIBwIQnuVW` (текст `content/dzen/mac-mini-dual-pc-setup.md`; 4 фото загружены через редактор, обложка — общий вид стола). Telegram: `content/telegram/mac-mini-dual-pc-setup.md` — **черновик, не отправлять без отдельной команды автора**.
+Расхождение про радиосвисток снято 09.10: в `EXPERIENCE.md` теперь универсальная формулировка «Периферия Multi-Device, переключение профилей кнопками», текст статьи оставлен как есть.
 
 ### avito-pc-delivery-drama — личная история (09.10.2026)
 
