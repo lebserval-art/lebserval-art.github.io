@@ -6,7 +6,7 @@
 3. images/mac-mini-dual-pc/hdmi-switch.jpg
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/
 Ссылка в конце — на статью в Дзене. Основа — реальный опыт (EXPERIENCE.md, раздел 6). Партнёрских ссылок нет.
-Статус: черновик, не отправлен; публикация только по отдельной команде автора.
+Статус: отправлен в @technogid_ru 09.10.2026 с обложкой cover.jpg.
 -->
 
 --- ПОСТ ---
