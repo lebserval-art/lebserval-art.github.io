@@ -3,7 +3,7 @@
 Фото: images/mac-mini-ssd-upgrade/order-netac-2tb.jpg (скриншот заказа SSD с ценой; личные данные заблюрены).
 Raw-база: https://raw.githubusercontent.com/lebserval-art/lebserval-art.github.io/master/
 Основа — реальный опыт (EXPERIENCE.md, раздел 7). Партнёрских ссылок нет. Лимит поста — до 950 знаков.
-Статус: ожидает отправки.
+Статус: отправлен в @technogid_ru 11.10.2026 с фото order-netac-2tb.jpg (подпись — текст поста, ссылка на статью на сайте).
 -->
 
 --- ПОСТ ---
